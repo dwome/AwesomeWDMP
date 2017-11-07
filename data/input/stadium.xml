@@ -1,0 +1,2134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stadiums xsi:noNamespaceSchemaLocation="file:///C:/Users/micha/Documents/Uni/WDI%20Projekt/Target%20Schema/Target%20Schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<stadium id="stadiums_20150302_1">
+		<name>Emirates Stadium </name>
+		<capacity>60361</capacity>
+		<location>
+			<country>England</country>
+			<city>London </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Arsenal</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_2">
+		<name>Villa Park </name>
+		<capacity>42785</capacity>
+		<location>
+			<country>England</country>
+			<city>Birmingham </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Aston Villa</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_3">
+		<name>Ewood Park </name>
+		<capacity>31154</capacity>
+		<location>
+			<country>England</country>
+			<city>Blackburn </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Blackburn Rovers</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_4">
+		<name>Reebok Stadium </name>
+		<capacity>28100</capacity>
+		<location>
+			<country>England</country>
+			<city>Bolton </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Bolton Wanderers</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_5">
+		<name>Stamford Bridge </name>
+		<capacity>42449</capacity>
+		<location>
+			<country>England</country>
+			<city>London </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Chelsea</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_6">
+		<name>Goodison Park </name>
+		<capacity>40157</capacity>
+		<location>
+			<country>England</country>
+			<city>Liverpool </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Everton</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_7">
+		<name>Craven Cottage </name>
+		<capacity>25700</capacity>
+		<location>
+			<country>England</country>
+			<city>London </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Fulham</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_8">
+		<name>Anfield </name>
+		<capacity>45276</capacity>
+		<location>
+			<country>England</country>
+			<city>Liverpool </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Liverpool</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_9">
+		<name>Etihad Stadium</name>
+		<capacity>47405</capacity>
+		<location>
+			<country>England</country>
+			<city>Manchester </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Manchester City</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_10">
+		<name>Old Trafford </name>
+		<capacity>75811</capacity>
+		<location>
+			<country>England</country>
+			<city>Stretford </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Manchester United</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_11">
+		<name>Sports Direct Arena</name>
+		<capacity>52409</capacity>
+		<location>
+			<country>England</country>
+			<city>Newcastle upon Tyne </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Newcastle United</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_12">
+		<name>Carrow Road </name>
+		<capacity>27010</capacity>
+		<location>
+			<country>England</country>
+			<city>Norwich </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Norwich City</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_13">
+		<name>Loftus Road </name>
+		<capacity>18439</capacity>
+		<location>
+			<country>England</country>
+			<city>London </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Queens Park Rangers</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_14">
+		<name>Britannia Stadium </name>
+		<capacity>27740</capacity>
+		<location>
+			<country>England</country>
+			<city>Stoke-on-Trent </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Stoke City</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_15">
+		<name>Stadium of Light </name>
+		<capacity>48707</capacity>
+		<location>
+			<country>England</country>
+			<city>Sunderland </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Sunderland</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_16">
+		<name>Liberty Stadium </name>
+		<capacity>20520</capacity>
+		<location>
+			<country>England</country>
+			<city>Swansea </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Swansea City</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_17">
+		<name>White Hart Lane </name>
+		<capacity>36230</capacity>
+		<location>
+			<country>England</country>
+			<city>London </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Tottenham Hotspur</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_18">
+		<name>The Hawthorns </name>
+		<capacity>27877</capacity>
+		<location>
+			<country>England</country>
+			<city>West Bromwich </city>
+		</location>
+		<clubs>
+			<club>
+				<name>West Bromwich Albion</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_19">
+		<name>DW Stadium </name>
+		<capacity>25133</capacity>
+		<location>
+			<country>England</country>
+			<city>Wigan </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Wigan Athletic</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_20">
+		<name>Molineux Stadium </name>
+		<capacity>27828</capacity>
+		<location>
+			<country>England</country>
+			<city>Wolverhampton </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Wolverhampton Wanderers</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_21">
+		<name>Oakwell </name>
+		<capacity>23009</capacity>
+		<location>
+			<country>England</country>
+			<city>Barnsley </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Barnsley</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_22">
+		<name>St Andrew's Stadium </name>
+		<capacity>30079</capacity>
+		<location>
+			<country>England</country>
+			<city>Birmingham </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Birmingham City</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_23">
+		<name>Bloomfield Road </name>
+		<capacity>16220</capacity>
+		<location>
+			<country>England</country>
+			<city>Blackpool </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Blackpool</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_24">
+		<name>American Express Community Stadium </name>
+		<capacity>22374</capacity>
+		<location>
+			<country>England</country>
+			<city>Brighton </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Brighton &amp; Hove Albion</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_25">
+		<name>Ashton Gate </name>
+		<capacity>21497</capacity>
+		<location>
+			<country>England</country>
+			<city>Bristol </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Bristol City</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_26">
+		<name>Turf Moor </name>
+		<capacity>22546</capacity>
+		<location>
+			<country>England</country>
+			<city>Burnley </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Burnley</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_27">
+		<name>Cardiff City Stadium </name>
+		<capacity>26828</capacity>
+		<location>
+			<country>England</country>
+			<city>Cardiff </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Cardiff City</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_28">
+		<name>Ricoh Arena </name>
+		<capacity>32609</capacity>
+		<location>
+			<country>England</country>
+			<city>Coventry </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Coventry City</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_29">
+		<name>Selhurst Park </name>
+		<capacity>26309</capacity>
+		<location>
+			<country>England</country>
+			<city>London </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Crystal Palace</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_30">
+		<name>Pride Park Stadium </name>
+		<capacity>33597</capacity>
+		<location>
+			<country>England</country>
+			<city>Derby </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Derby County</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_31">
+		<name>Keepmoat Stadium </name>
+		<capacity>15231</capacity>
+		<location>
+			<country>England</country>
+			<city>Doncaster </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Doncaster Rovers</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_32">
+		<name>KC Stadium </name>
+		<capacity>25404</capacity>
+		<location>
+			<country>England</country>
+			<city>Kingston upon Hull </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Hull City</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_33">
+		<name>Portman Road </name>
+		<capacity>30311</capacity>
+		<location>
+			<country>England</country>
+			<city>Ipswich </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Ipswich Town</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_34">
+		<name>Elland Road </name>
+		<capacity>39460</capacity>
+		<location>
+			<country>England</country>
+			<city>Leeds </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Leeds United</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_35">
+		<name>King Power Stadium </name>
+		<capacity>32500</capacity>
+		<location>
+			<country>England</country>
+			<city>Leicester </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Leicester City</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_36">
+		<name>Riverside Stadium </name>
+		<capacity>34988</capacity>
+		<location>
+			<country>England</country>
+			<city>Middlesbrough </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Middlesbrough</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_37">
+		<name>The Den </name>
+		<capacity>20146</capacity>
+		<location>
+			<country>England</country>
+			<city>London </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Millwall</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_38">
+		<name>City Ground </name>
+		<capacity>30576</capacity>
+		<location>
+			<country>England</country>
+			<city>Nottingham </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Nottingham Forest</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_39">
+		<name>London Road Stadium </name>
+		<capacity>15460</capacity>
+		<location>
+			<country>England</country>
+			<city>Peterborough </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Peterborough United</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_40">
+		<name>Fratton Park </name>
+		<capacity>20224</capacity>
+		<location>
+			<country>England</country>
+			<city>Portsmouth </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Portsmouth</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_41">
+		<name>Madejski Stadium </name>
+		<capacity>24224</capacity>
+		<location>
+			<country>England</country>
+			<city>Reading </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Reading</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_42">
+		<name>St Mary's Stadium </name>
+		<capacity>32689</capacity>
+		<location>
+			<country>England</country>
+			<city>Southampton </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Southampton</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_43">
+		<name>Vicarage Road </name>
+		<capacity>23500</capacity>
+		<location>
+			<country>England</country>
+			<city>Watford </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Watford</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_44">
+		<name>Boleyn Ground </name>
+		<capacity>35303</capacity>
+		<location>
+			<country>England</country>
+			<city>London </city>
+		</location>
+		<clubs>
+			<club>
+				<name>West Ham United</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_45">
+		<name>Almondvale Stadium </name>
+		<capacity>10122</capacity>
+		<location>
+			<country>Scotland</country>
+			<city>Livingston</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Livingston and Gretna</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_46">
+		<name>Caledonian Stadium </name>
+		<capacity>7918</capacity>
+		<location>
+			<country>Scotland</country>
+			<city>Iverness</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Inverness C.T.</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_47">
+		<name>Celtic Park </name>
+		<capacity>60832</capacity>
+		<location>
+			<country>Scotland</country>
+			<city>Glasgow</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Celtic</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_48">
+		<name>Dens Park </name>
+		<capacity>12085</capacity>
+		<location>
+			<country>Scotland</country>
+			<city>Dundee</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Dundee</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_49">
+		<name>East End Park </name>
+		<capacity>11380</capacity>
+		<location>
+			<country>Scotland</country>
+			<city>Dunfermline</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Dunfermline Athletic</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_50">
+		<name>Easter Road </name>
+		<capacity>20421</capacity>
+		<location>
+			<country>Scotland</country>
+			<city>Edinburgh</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Hibernian</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_51">
+		<name>Falkirk Stadium </name>
+		<capacity>9200</capacity>
+		<location>
+			<country>Scotland</country>
+			<city>Falkirk</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Falkirk</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_52">
+		<name>Fir Park </name>
+		<capacity>13742</capacity>
+		<location>
+			<country>Scotland</country>
+			<city>Motherwell</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Motherwell and Gretna</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_53">
+		<name>Firhill Stadium </name>
+		<capacity>10887</capacity>
+		<location>
+			<country>Scotland</country>
+			<city>Glasgow</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Partick Thistle</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_54">
+		<name>Ibrox Stadium </name>
+		<capacity>51082</capacity>
+		<location>
+			<country>Scotland</country>
+			<city>Glasgow</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Rangers</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_55">
+		<name>McDiarmid Park </name>
+		<capacity>10673</capacity>
+		<location>
+			<country>Scotland</country>
+			<city>Perth</city>
+		</location>
+		<clubs>
+			<club>
+				<name>St. Johnstone</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_56">
+		<name>New Douglas Park </name>
+		<capacity>6078</capacity>
+		<location>
+			<country>Scotland</country>
+			<city>Hamilton</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Hamilton Academical</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_57">
+		<name>Pittodrie Stadium </name>
+		<capacity>22199</capacity>
+		<location>
+			<country>Scotland</country>
+			<city>Aberdeen</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Aberdeen and Inverness C.T.</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_58">
+		<name>Rugby Park </name>
+		<capacity>18128</capacity>
+		<location>
+			<country>Scotland</country>
+			<city>Kilmarnock</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Kilmarnock</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_59">
+		<name>St. Mirren Park </name>
+		<capacity>8016</capacity>
+		<location>
+			<country>Scotland</country>
+			<city>Paisley</city>
+		</location>
+		<clubs>
+			<club>
+				<name>St. Mirren</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_60">
+		<name>Tannadice Park </name>
+		<capacity>14209</capacity>
+		<location>
+			<country>Scotland</country>
+			<city>Dundee</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Dundee United</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_61">
+		<name>Tynecastle Stadium </name>
+		<capacity>17420</capacity>
+		<location>
+			<country>Scotland</country>
+			<city>Edinburgh</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Heart of Midlothian</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_62">
+		<name>Victoria Park </name>
+		<capacity>6310</capacity>
+		<location>
+			<country>Scotland</country>
+			<city>Dingvall</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Ross County</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_63">
+		<name>SGL arena </name>
+		<capacity>30660</capacity>
+		<location>
+			<country>Germany</country>
+			<city>Augsburg </city>
+		</location>
+		<clubs>
+			<club>
+				<name>FC Augsburg</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_64">
+		<name>BayArena </name>
+		<capacity>30210</capacity>
+		<location>
+			<country>Germany</country>
+			<city>Leverkusen </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Bayer Leverkusen</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_65">
+		<name>Allianz Arena </name>
+		<capacity>71000</capacity>
+		<location>
+			<country>Germany</country>
+			<city>Munich </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Bayern Munich</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_66">
+		<name>Signal Iduna Park </name>
+		<capacity>80645</capacity>
+		<location>
+			<country>Germany</country>
+			<city>Dortmund </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Borussia Dortmund</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_67">
+		<name>Borussia-Park </name>
+		<capacity>54010</capacity>
+		<location>
+			<country>Germany</country>
+			<city>Mönchengladbach </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Borussia Mönchengladbach</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_68">
+		<name>Eintracht-Stadion </name>
+		<capacity>23325</capacity>
+		<location>
+			<country>Germany</country>
+			<city>Braunschweig </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Eintracht Braunschweig</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_69">
+		<name>Commerzbank-Arena </name>
+		<capacity>51500</capacity>
+		<location>
+			<country>Germany</country>
+			<city>Frankfurt </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Eintracht Frankfurt</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_70">
+		<name>MAGE SOLAR Stadion </name>
+		<capacity>24000</capacity>
+		<location>
+			<country>Germany</country>
+			<city>Freiburg </city>
+		</location>
+		<clubs>
+			<club>
+				<name>SC Freiburg</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_71">
+		<name>Imtech Arena </name>
+		<capacity>57000</capacity>
+		<location>
+			<country>Germany</country>
+			<city>Hamburg </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Hamburger SV</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_72">
+		<name>HDI-Arena </name>
+		<capacity>49000</capacity>
+		<location>
+			<country>Germany</country>
+			<city>Hanover </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Hannover 96</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_73">
+		<name>Olympiastadion </name>
+		<capacity>74244</capacity>
+		<location>
+			<country>Germany</country>
+			<city>Berlin </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Hertha BSC</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_74">
+		<name>Rhein-Neckar Arena </name>
+		<capacity>30150</capacity>
+		<location>
+			<country>Germany</country>
+			<city>Sinsheim </city>
+		</location>
+		<clubs>
+			<club>
+				<name>TSG 1899 Hoffenheim</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_75">
+		<name>Coface Arena </name>
+		<capacity>34000</capacity>
+		<location>
+			<country>Germany</country>
+			<city>Mainz </city>
+		</location>
+		<clubs>
+			<club>
+				<name>1. FSV Mainz 05</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_76">
+		<name>Grundig-Stadion </name>
+		<capacity>50000</capacity>
+		<location>
+			<country>Germany</country>
+			<city>Nuremberg </city>
+		</location>
+		<clubs>
+			<club>
+				<name>1. FC Nürnberg</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_77">
+		<name>Veltins-Arena </name>
+		<capacity>61673</capacity>
+		<location>
+			<country>Germany</country>
+			<city>Gelsenkirchen </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Schalke 04</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_78">
+		<name>Mercedes-Benz Arena </name>
+		<capacity>60441</capacity>
+		<location>
+			<country>Germany</country>
+			<city>Stuttgart </city>
+		</location>
+		<clubs>
+			<club>
+				<name>VfB Stuttgart</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_79">
+		<name>Weserstadion </name>
+		<capacity>42100</capacity>
+		<location>
+			<country>Germany</country>
+			<city>Bremen </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Werder Bremen</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_80">
+		<name>Volkswagen Arena </name>
+		<capacity>30000</capacity>
+		<location>
+			<country>Germany</country>
+			<city>Wolfsburg </city>
+		</location>
+		<clubs>
+			<club>
+				<name>VfL Wolfsburg</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_81">
+		<name>Esprit Arena </name>
+		<capacity>54600</capacity>
+		<location>
+			<country>Germany</country>
+			<city>Düsseldorf </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Fortuna Düsseldorf</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_82">
+		<name>Trolli Arena </name>
+		<capacity>18000</capacity>
+		<location>
+			<country>Germany</country>
+			<city>Fürth </city>
+		</location>
+		<clubs>
+			<club>
+				<name>SpVgg Greuther Fürth</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_83">
+		<name>Fritz-Walter-Stadion </name>
+		<capacity>49780</capacity>
+		<location>
+			<country>Germany</country>
+			<city>Kaiserslautern </city>
+		</location>
+		<clubs>
+			<club>
+				<name>1. FC Kaiserslautern</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_84">
+		<name>RheinEnergieStadion </name>
+		<capacity>50000</capacity>
+		<location>
+			<country>Germany</country>
+			<city>Cologne </city>
+		</location>
+		<clubs>
+			<club>
+				<name>1. FC Köln</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_85">
+		<name>Millerntor-Stadion </name>
+		<capacity>24487</capacity>
+		<location>
+			<country>Germany</country>
+			<city>Hamburg </city>
+		</location>
+		<clubs>
+			<club>
+				<name>FC St. Pauli</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_86">
+		<name>Estadio del Mediterráneo </name>
+		<capacity>22000</capacity>
+		<location>
+			<country>Spain</country>
+			<city>Almería </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Almería</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_87">
+		<name>San Mamés </name>
+		<capacity>53332</capacity>
+		<location>
+			<country>Spain</country>
+			<city>Bilbao </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Athletic Bilbao</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_88">
+		<name>Vicente Calderón </name>
+		<capacity>54851</capacity>
+		<location>
+			<country>Spain</country>
+			<city>Madrid </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Atlético Madrid</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_89">
+		<name>Camp Nou </name>
+		<capacity>99354</capacity>
+		<location>
+			<country>Spain</country>
+			<city>Barcelona </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Barcelona</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_90">
+		<name>Benito Villamarín </name>
+		<capacity>52500</capacity>
+		<location>
+			<country>Spain</country>
+			<city>Seville </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Betis</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_91">
+		<name>Balaídos </name>
+		<capacity>31800</capacity>
+		<location>
+			<country>Spain</country>
+			<city>Vigo </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Celta de Vigo</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_92">
+		<name>Martínez Valero </name>
+		<capacity>36017</capacity>
+		<location>
+			<country>Spain</country>
+			<city>Elche </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Elche</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_93">
+		<name>Cornellà-El Prat </name>
+		<capacity>40500</capacity>
+		<location>
+			<country>Spain</country>
+			<city>Cornellà de Llobregat </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Espanyol</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_94">
+		<name>Coliseum Alfonso Pérez </name>
+		<capacity>17700</capacity>
+		<location>
+			<country>Spain</country>
+			<city>Getafe </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Getafe</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_95">
+		<name>Nuevo Los Cármenes </name>
+		<capacity>22524</capacity>
+		<location>
+			<country>Spain</country>
+			<city>Granada </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Granada</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_96">
+		<name>Ciutat de València </name>
+		<capacity>25534</capacity>
+		<location>
+			<country>Spain</country>
+			<city>Valencia </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Levante</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_97">
+		<name>La Rosaleda </name>
+		<capacity>30044</capacity>
+		<location>
+			<country>Spain</country>
+			<city>Málaga </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Málaga</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_98">
+		<name>El Sadar </name>
+		<capacity>19553</capacity>
+		<location>
+			<country>Spain</country>
+			<city>Pamplona </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Osasuna</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_99">
+		<name>Campo de Vallecas </name>
+		<capacity>15489</capacity>
+		<location>
+			<country>Spain</country>
+			<city>Madrid </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Rayo Vallecano</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_100">
+		<name>Santiago Bernabéu </name>
+		<capacity>85454</capacity>
+		<location>
+			<country>Spain</country>
+			<city>Madrid </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Real Madrid</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_101">
+		<name>Anoeta </name>
+		<capacity>32076</capacity>
+		<location>
+			<country>Spain</country>
+			<city>San Sebastián </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Real Sociedad</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_102">
+		<name>Ramón Sánchez Pizjuán </name>
+		<capacity>45500</capacity>
+		<location>
+			<country>Spain</country>
+			<city>Seville </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Sevilla</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_103">
+		<name>Mestalla </name>
+		<capacity>55000</capacity>
+		<location>
+			<country>Spain</country>
+			<city>Valencia </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Valencia</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_104">
+		<name>Nuevo José Zorrilla </name>
+		<capacity>26512</capacity>
+		<location>
+			<country>Spain</country>
+			<city>Valladolid </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Valladolid</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_105">
+		<name>El Madrigal </name>
+		<capacity>24890</capacity>
+		<location>
+			<country>Spain</country>
+			<city>Villarreal </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Villarreal</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_106">
+		<name>Riazor </name>
+		<capacity>34600</capacity>
+		<location>
+			<country>Spain</country>
+			<city>A Coruña </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Deportivo La Coruña</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_107">
+		<name>Iberostar Stadium </name>
+		<capacity>23142</capacity>
+		<location>
+			<country>Spain</country>
+			<city>Palma </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Mallorca</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_108">
+		<name>La Romareda </name>
+		<capacity>34596</capacity>
+		<location>
+			<country>Spain</country>
+			<city>Zaragoza </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Zaragoza</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_109">
+		<name>Stade François Coty </name>
+		<capacity>10660</capacity>
+		<location>
+			<country>France</country>
+			<city>Ajaccio </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Ajaccio</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_110">
+		<name>Stade Armand Cesari </name>
+		<capacity>16480</capacity>
+		<location>
+			<country>France</country>
+			<city>Bastia </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Bastia</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_111">
+		<name>Stade Chaban-Delmas </name>
+		<capacity>34462</capacity>
+		<location>
+			<country>France</country>
+			<city>Bordeaux </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Bordeaux</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_112">
+		<name>Parc des Sports </name>
+		<capacity>15660</capacity>
+		<location>
+			<country>France</country>
+			<city>Annecy </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Évian</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_113">
+		<name>Stade du Roudourou </name>
+		<capacity>18126</capacity>
+		<location>
+			<country>France</country>
+			<city>Guingamp </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Guingamp</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_114">
+		<name>Stade Pierre-Mauroy </name>
+		<capacity>50186</capacity>
+		<location>
+			<country>France</country>
+			<city>Villeneuve-d'Ascq </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Lille</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_115">
+		<name>Stade du Moustoir </name>
+		<capacity>18890</capacity>
+		<location>
+			<country>France</country>
+			<city>Lorient </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Lorient</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_116">
+		<name>Stade de Gerland </name>
+		<capacity>41842</capacity>
+		<location>
+			<country>France</country>
+			<city>Lyon </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Lyon</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_117">
+		<name>Stade Velodrome</name>
+		<capacity>48000</capacity>
+		<location>
+			<country>France</country>
+			<city>Marseille </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Marseille</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_118">
+		<name>Stade Louis II </name>
+		<capacity>18500</capacity>
+		<location>
+			<country>France</country>
+			<city>Monaco </city>
+		</location>
+		<clubs>
+			<club>
+				<name>AS Monaco</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_119">
+		<name>Stade de la Mosson </name>
+		<capacity>32939</capacity>
+		<location>
+			<country>France</country>
+			<city>Montpellier </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Montpellier</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_120">
+		<name>Stade de la Beaujoire </name>
+		<capacity>38285</capacity>
+		<location>
+			<country>France</country>
+			<city>Nantes </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Nantes</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_121">
+		<name>Allianz Riviera </name>
+		<capacity>35624</capacity>
+		<location>
+			<country>France</country>
+			<city>Nice </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Nice</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_122">
+		<name>Parc des Princes </name>
+		<capacity>48712</capacity>
+		<location>
+			<country>France</country>
+			<city>Paris </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Paris Saint-Germain</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_123">
+		<name>Stade Auguste-Delaune II </name>
+		<capacity>21684</capacity>
+		<location>
+			<country>France</country>
+			<city>Reims </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Reims</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_124">
+		<name>Stade de la Route de Lorient </name>
+		<capacity>31127</capacity>
+		<location>
+			<country>France</country>
+			<city>Rennes </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Rennes</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_125">
+		<name>Stade Geoffroy-Guichard</name>
+		<capacity>26747</capacity>
+		<location>
+			<country>France</country>
+			<city>Saint-Étienne </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Saint-Étienne</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_126">
+		<name>Stade Auguste Bonal </name>
+		<capacity>20005</capacity>
+		<location>
+			<country>France</country>
+			<city>Montbéliard </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Sochaux</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_127">
+		<name>Stadium Municipal</name>
+		<capacity>35470</capacity>
+		<location>
+			<country>France</country>
+			<city>Toulouse </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Toulouse</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_128">
+		<name>Stade du Hainaut </name>
+		<capacity>25172</capacity>
+		<location>
+			<country>France</country>
+			<city>Valenciennes </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Valenciennes</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_129">
+		<name>Stade Marcel Picot </name>
+		<capacity>20085</capacity>
+		<location>
+			<country>France</country>
+			<city>Tomblaine </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Nancy</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_130">
+		<name>Stade Gaston Gérard </name>
+		<capacity>15998</capacity>
+		<location>
+			<country>France</country>
+			<city>Dijon</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Dijon</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_131">
+		<name>Stade de l'Aube </name>
+		<capacity>21877</capacity>
+		<location>
+			<country>France</country>
+			<city>Troyes</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Troyes</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_132">
+		<name>Stade de l'Abbé-Deschamps </name>
+		<capacity>24493</capacity>
+		<location>
+			<country>France</country>
+			<city>Auxerre </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Auxerre</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_133">
+		<name>Stade Francis-Le Blé </name>
+		<capacity>16000</capacity>
+		<location>
+			<country>France</country>
+			<city>Brest</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Brest</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_134">
+		<name>Stade Michel d'Ornano </name>
+		<capacity>21500</capacity>
+		<location>
+			<country>France</country>
+			<city>Caen </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Caen</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_135">
+		<name>El Molinón</name>
+		<capacity>30000</capacity>
+		<location>
+			<country>Spain</country>
+			<city>Gijón</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Sporting de Gijón</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_136">
+		<name>Campos de Sport de El Sardinero</name>
+		<capacity>22222</capacity>
+		<location>
+			<country>Spain</country>
+			<city>Santander</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Racing de Santander</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_137">
+		<name>Boundary Park</name>
+		<capacity>10638</capacity>
+		<location>
+			<country>England</country>
+			<city>Oldham</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Oldham Athletic</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_138">
+		<name>Bramall Lane</name>
+		<capacity>32702</capacity>
+		<location>
+			<country>England</country>
+			<city>Sheffield</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Sheffield United</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_139">
+		<name>Selhurst Park</name>
+		<capacity>26255</capacity>
+		<location>
+			<country>England</country>
+		</location>
+		<clubs>
+			<club>
+				<name>Wimbledon</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_140">
+		<name>Hillsborough</name>
+		<capacity>39732</capacity>
+		<location>
+			<country>England</country>
+			<city>Sheffield</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Sheffield Wednesday</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_141">
+		<name>County Ground</name>
+		<capacity>15728</capacity>
+		<location>
+			<country>England</country>
+			<city>Swindon</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Swindon Town</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_142">
+		<name>The Valley </name>
+		<capacity>27111</capacity>
+		<location>
+			<country>England</country>
+			<city>Greenwich</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Charlton Athletic</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_143">
+		<name>Valley Parade</name>
+		<capacity>25136</capacity>
+		<location>
+			<country>England</country>
+			<city>Bradford</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Bradford City</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_144">
+		<name>Blundell park</name>
+		<capacity>9062</capacity>
+		<location>
+			<country>England</country>
+			<city>Cleethorpes</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Grimsby Town</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_145">
+		<name>Kenilworth Road</name>
+		<capacity>10356</capacity>
+		<location>
+			<country>England</country>
+			<city>Luton</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Luton Town</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_146">
+		<name>Meadow Lane</name>
+		<capacity>20211</capacity>
+		<location>
+			<country>England</country>
+			<city>Nottingham </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Notts County F.C.</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_147">
+		<name>Kassam Stadium</name>
+		<capacity>12500</capacity>
+		<location>
+			<country>England</country>
+			<city>Oxford</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Oxford United</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_148">
+		<name>Roots Hall</name>
+		<capacity>12392</capacity>
+		<location>
+			<country>England</country>
+			<city>Prittlewell</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Southend United</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_149">
+		<name>Prenton Park</name>
+		<capacity>16567</capacity>
+		<location>
+			<country>England</country>
+			<city>Birkenhead</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Tranmere Rovers</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_150">
+		<name>The John Smith's Stadium</name>
+		<capacity>24500</capacity>
+		<location>
+			<country>England</country>
+			<city>Huddersfield</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Huddersfield Town A.F.C.</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_151">
+		<name>Vale Park</name>
+		<capacity>19052</capacity>
+		<location>
+			<country>England</country>
+			<city>Burslem</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Port Vale F.C.</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_152">
+		<name>Gigg Lane</name>
+		<capacity>11840</capacity>
+		<location>
+			<country>England</country>
+			<city>Bury</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Bury F.C.</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_153">
+		<name>Alexandra Stadium</name>
+		<capacity>10153</capacity>
+		<location>
+			<country>England</country>
+			<city>Crewe</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Crewe Alexandra</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_154">
+		<name>Edgeley Park</name>
+		<capacity>10841</capacity>
+		<location>
+			<country>England</country>
+			<city>Stockport</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Stockport County</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_155">
+		<name>Banks's Stadium</name>
+		<capacity>11300</capacity>
+		<location>
+			<country>England</country>
+			<city>Walsall</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Walsall F.C.</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_156">
+		<name>Priestfield</name>
+		<capacity>11582</capacity>
+		<location>
+			<country>England</country>
+			<city>Gillingham</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Gillingham F.C.</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_157">
+		<name>Deepdale</name>
+		<capacity>23404</capacity>
+		<location>
+			<country>England</country>
+			<city>Preston</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Preston North End</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_158">
+		<name>New York Stadium</name>
+		<capacity>12021</capacity>
+		<location>
+			<country>England</country>
+			<city>Rotherham</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Rotherham United</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_159">
+		<name>Home Park</name>
+		<capacity>17150</capacity>
+		<location>
+			<country>England</country>
+			<city>Plymouth</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Plymouth Argyle</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_160">
+		<name>Colchester Community Stadium</name>
+		<capacity>10105</capacity>
+		<location>
+			<country>England</country>
+			<city>Colchester</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Colchester United</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_161">
+		<name>Glanford Park</name>
+		<capacity>9088</capacity>
+		<location>
+			<country>England</country>
+			<city>Scunthorpe</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Scunthorpe United</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_162">
+		<name>Goldsands Stadium</name>
+		<capacity>12000</capacity>
+		<location>
+			<country>England</country>
+			<city>Bournemouth</city>
+		</location>
+		<clubs>
+			<club>
+				<name>A.F.C. Bournemouth</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_163">
+		<name>Huish Park</name>
+		<capacity>9565</capacity>
+		<location>
+			<country>England</country>
+			<city>Yeovil</city>
+		</location>
+		<clubs>
+			<club>
+				<name>Yeovil Town</name>
+			</club>
+		</clubs>
+	</stadium>
+	<stadium id="stadiums_20150302_164">
+		<name>Griffin Park</name>
+		<capacity>12763</capacity>
+		<location>
+			<country>England</country>
+			<city>London </city>
+		</location>
+		<clubs>
+			<club>
+				<name>Brentford</name>
+			</club>
+		</clubs>
+	</stadium>
+</stadiums>
