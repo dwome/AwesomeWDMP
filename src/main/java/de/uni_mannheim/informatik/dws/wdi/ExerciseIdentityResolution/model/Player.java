@@ -34,99 +34,116 @@ public class Player implements Matchable {
 
 	protected String id;
 	protected String provenance;
-	private String title;
-	private String director;
-	private LocalDateTime date;
-	private List<Actor> actors;
-	private String studio;
-	private String genre;
-	private double budget;
-	private double gross;
+	private String name;
+	private String brithdate;
+	private String nationality;
+	private int age;
+	private int rating;
+	private String position;
+	private int height;
+	private int weight;
+	
 
 	public Player(String identifier, String provenance) {
 		id = identifier;
 		this.provenance = provenance;
-		actors = new LinkedList<>();
 	}
 
-	@Override
-	public String getIdentifier() {
+
+	public String getId() {
 		return id;
 	}
 
-	@Override
-	public String getProvenance() {
-		return provenance;
+
+	public void setId(String id) {
+		this.id = id;
 	}
 
-	public String getTitle() {
-		return title;
+
+	public String getName() {
+		return name;
 	}
 
-	public void setTitle(String title) {
-		this.title = title;
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public String getDirector() {
-		return director;
+
+	public String getBirthdate() {
+		return brithdate;
 	}
 
-	public void setDirector(String director) {
-		this.director = director;
+
+	public void setBirthdate(String birthdate) {
+		this.brithdate = birthdate;
 	}
 
-	public LocalDateTime getDate() {
-		return date;
+
+	public String getNationality() {
+		return nationality;
 	}
 
-	public void setDate(LocalDateTime date) {
-		this.date = date;
+
+	public void setNationality(String nationality) {
+		this.nationality = nationality;
 	}
 
-	public List<Actor> getActors() {
-		return actors;
+
+	public int getAge() {
+		return age;
 	}
 
-	public void setActors(List<Actor> actors) {
-		this.actors = actors;
-	}
-	
-	public String getStudio() {
-		return studio;
+
+	public void setAge(int age) {
+		this.age = age;
 	}
 
-	public void setStudio(String studio) {
-		this.studio = studio;
+
+	public int getRating() {
+		return rating;
 	}
 
-	public String getGenre() {
-		return genre;
+
+	public void setRating(int rating) {
+		this.rating = rating;
 	}
 
-	public void setGenre(String genre) {
-		this.genre = genre;
+
+	public String getPosition() {
+		return position;
 	}
 
-	public double getBudget() {
-		return budget;
+
+	public void setPosition(String position) {
+		this.position = position;
 	}
 
-	public void setBudget(double budget) {
-		this.budget = budget;
+
+	public int getHeight() {
+		return height;
 	}
 
-	public double getGross() {
-		return gross;
+
+	public void setHeight(int height) {
+		this.height = height;
 	}
 
-	public void setGross(double gross) {
-		this.gross = gross;
+
+	public int getWeight() {
+		return weight;
 	}
+
+
+	public void setWeight(int weight) {
+		this.weight = weight;
+	}
+
 
 	@Override
 	public String toString() {
-		return String.format("[Movie: %s / %s / %s]", getTitle(),
-				getDirector(), getDate().toString());
+		return String.format("[Player: %s / %s / %s]", getName(),
+				getPosition());
 	}
 
 	@Override
@@ -140,6 +157,20 @@ public class Player implements Matchable {
 			return this.getIdentifier().equals(((Player) obj).getIdentifier());
 		}else
 			return false;
+	}
+
+
+	@Override
+	public String getIdentifier() {
+		// TODO Auto-generated method stub
+		return id;
+	}
+
+
+	@Override
+	public String getProvenance() {
+		// TODO Auto-generated method stub
+		return provenance;
 	}
 	
 	

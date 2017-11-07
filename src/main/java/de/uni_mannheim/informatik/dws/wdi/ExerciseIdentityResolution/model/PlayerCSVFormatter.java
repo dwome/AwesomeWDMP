@@ -19,30 +19,32 @@ import de.uni_mannheim.informatik.dws.winter.model.io.CSVDataSetFormatter;
  * @author Oliver Lehmberg (oli@dwslab.de)
  *
  */
-public class PlayerCSVFormatter extends CSVDataSetFormatter<Movie, Attribute> {
+public class PlayerCSVFormatter extends CSVDataSetFormatter<Player, Attribute> {
 
 	/* (non-Javadoc)
 	 * @see de.uni_mannheim.informatik.wdi.model.io.CSVDataSetFormatter#getHeader(de.uni_mannheim.informatik.wdi.model.DataSet)
 	 */
+	
 	@Override
-	public String[] getHeader(DataSet<Movie, Attribute> dataset) {
-		return new String[] { "id", "title", "studio", "genre", "budget", "gross", "director", "date" };
+	public String[] getHeader(DataSet<Player, Attribute> dataset) {
+		return new String[] { "id", "name", "nationality", "brithdate", "age", "rating", "position", "height", "weight" };
 	}
 
 	/* (non-Javadoc)
 	 * @see de.uni_mannheim.informatik.wdi.model.io.CSVDataSetFormatter#format(de.uni_mannheim.informatik.wdi.model.Matchable, de.uni_mannheim.informatik.wdi.model.DataSet)
 	 */
 	@Override
-	public String[] format(Movie record, DataSet<Movie, Attribute> dataset) {
+	public String[] format(Player record, DataSet<Player, Attribute> dataset) {
 		return new String[] {
 				record.getIdentifier(),
-				record.getTitle(),
-				record.getStudio(),
-				record.getGenre(),
-				Double.toString(record.getBudget()),
-				Double.toString(record.getGross()),
-				record.getDirector(),
-				record.getDate()==null ? "" : record.getDate().toString() 
+				record.getName(),
+				record.getNationality(),
+				record.getBirthdate(),
+				Integer.toString(record.getAge()),
+				Integer.toString(record.getRating()),
+				record.getPosition(),
+				Integer.toString(record.getHeight()),
+				Integer.toString(record.getWeight()),
 		};
 	}
 

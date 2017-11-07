@@ -17,56 +17,33 @@ import org.w3c.dom.Element;
 import de.uni_mannheim.informatik.dws.winter.model.io.XMLFormatter;
 
 /**
- * {@link XMLFormatter} for {@link Movie}s.
+ * {@link XMLFormatter} for {@link Actor}s.
  * 
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class PlayerXMLFormatter extends XMLFormatter<Movie> {
-
-	ActorXMLFormatter actorFormatter = new ActorXMLFormatter();
+public class PlayerXMLFormatter extends XMLFormatter<Player> {
 
 	@Override
 	public Element createRootElement(Document doc) {
-		return doc.createElement("movies");
+		return doc.createElement("player");
 	}
 
 	@Override
-	public Element createElementFromRecord(Movie record, Document doc) {
-		Element movie = doc.createElement("movie");
+	public Element createElementFromRecord(Player record, Document doc) {
+		Element player = doc.createElement("player");
 
-		movie.appendChild(createTextElement("id", record.getIdentifier(), doc));
+		player.appendChild(createTextElement("name", record.getName(), doc));
+		player.appendChild(createTextElement("brithdate", record.getBirthdate(), doc));
+		player.appendChild(createTextElement("nationality", record.getNationality(), doc));
+		player.appendChild(createTextElement("position", record.getPosition(), doc));
+		player.appendChild(createTextElement("age", Integer.toString(record.getAge()), doc));
+		player.appendChild(createTextElement("height", Integer.toString(record.getHeight()), doc));
+		player.appendChild(createTextElement("weight", Integer.toString(record.getWeight()), doc));
+		player.appendChild(createTextElement("rating", Integer.toString(record.getRating()), doc));
 
-		movie.appendChild(createTextElement("title",
-				record.getTitle(),
-				doc));
-		movie.appendChild(createTextElement("director",
-				record.getDirector(),
-				doc));
-		movie.appendChild(createTextElement("date", record
-				.getDate().toString(), doc));
-
-		movie.appendChild(createActorsElement(record, doc));
-
-		return movie;
+		return player;
 	}
 
-	protected Element createTextElementWithProvenance(String name,
-			String value, String provenance, Document doc) {
-		Element elem = createTextElement(name, value, doc);
-		elem.setAttribute("provenance", provenance);
-		return elem;
-	}
-
-	protected Element createActorsElement(Movie record, Document doc) {
-		Element actorRoot = actorFormatter.createRootElement(doc);
-
-		for (Actor a : record.getActors()) {
-			actorRoot.appendChild(actorFormatter
-					.createElementFromRecord(a, doc));
-		}
-
-		return actorRoot;
-	}
 
 }
