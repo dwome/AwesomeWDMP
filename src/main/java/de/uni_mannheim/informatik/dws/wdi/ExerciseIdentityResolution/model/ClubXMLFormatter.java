@@ -22,51 +22,30 @@ import de.uni_mannheim.informatik.dws.winter.model.io.XMLFormatter;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class ClubXMLFormatter extends XMLFormatter<Movie> {
+public class ClubXMLFormatter extends XMLFormatter<Club> {
 
 	ActorXMLFormatter actorFormatter = new ActorXMLFormatter();
 
 	@Override
 	public Element createRootElement(Document doc) {
-		return doc.createElement("movies");
+		return doc.createElement("clubs");
 	}
 
 	@Override
-	public Element createElementFromRecord(Movie record, Document doc) {
-		Element movie = doc.createElement("movie");
+	public Element createElementFromRecord(Club record, Document doc) {
+		Element club = doc.createElement("clubs");
 
-		movie.appendChild(createTextElement("id", record.getIdentifier(), doc));
+		club.appendChild(createTextElement("id", record.getIdentifier(), doc));
 
-		movie.appendChild(createTextElement("title",
-				record.getTitle(),
+		club.appendChild(createTextElement("name",
+				record.getName(),
 				doc));
-		movie.appendChild(createTextElement("director",
-				record.getDirector(),
+		club.appendChild(createTextElement("players",
+				record.getPlayers().toString(),
 				doc));
-		movie.appendChild(createTextElement("date", record
-				.getDate().toString(), doc));
 
-		movie.appendChild(createActorsElement(record, doc));
-
-		return movie;
+		return club;
 	}
 
-	protected Element createTextElementWithProvenance(String name,
-			String value, String provenance, Document doc) {
-		Element elem = createTextElement(name, value, doc);
-		elem.setAttribute("provenance", provenance);
-		return elem;
-	}
-
-	protected Element createActorsElement(Movie record, Document doc) {
-		Element actorRoot = actorFormatter.createRootElement(doc);
-
-		for (Actor a : record.getActors()) {
-			actorRoot.appendChild(actorFormatter
-					.createElementFromRecord(a, doc));
-		}
-
-		return actorRoot;
-	}
 
 }
