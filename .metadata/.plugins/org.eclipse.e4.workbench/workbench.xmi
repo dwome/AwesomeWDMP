@@ -284,7 +284,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_hPpVAMi6EeeNvohZVytjoQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_hP7o4Mi6EeeNvohZVytjoQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_gwHgmMi6EeeNvohZVytjoQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_7TfCoMjAEeegK_QAuz54Xw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_gwHgmMi6EeeNvohZVytjoQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_hPp8EMi6EeeNvohZVytjoQ" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -305,7 +305,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_hPqjIMi6EeeNvohZVytjoQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_hP-FIMi6EeeNvohZVytjoQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_gwGSW8i6EeeNvohZVytjoQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_7TitAMjAEeegK_QAuz54Xw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_gwGSW8i6EeeNvohZVytjoQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_hPqjIci6EeeNvohZVytjoQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -705,7 +705,7 @@
     <bindings xmi:id="_gxD7ksi6EeeNvohZVytjoQ" keySequence="ALT+COMMAND+X J" command="_gwFELci6EeeNvohZVytjoQ">
       <tags>platform:cocoa</tags>
     </bindings>
-    <bindings xmi:id="_gxvRA8i6EeeNvohZVytjoQ" keySequence="COMMAND+CTRL+F" command="_gxvRAci6EeeNvohZVytjoQ"/>
+    <bindings xmi:id="_676QIMjAEeegK_QAuz54Xw" keySequence="COMMAND+CTRL+F" command="_gxvRAci6EeeNvohZVytjoQ"/>
   </bindingTables>
   <bindingTables xmi:id="_gw15J8i6EeeNvohZVytjoQ" elementId="org.eclipse.ui.textEditorScope" bindingContext="_gwOOEci6EeeNvohZVytjoQ">
     <bindings xmi:id="_gw15KMi6EeeNvohZVytjoQ" keySequence="COMMAND+SHIFT+ARROW_LEFT" command="_gwIHoci6EeeNvohZVytjoQ">
@@ -893,7 +893,7 @@
     <bindings xmi:id="_gxA4R8i6EeeNvohZVytjoQ" keySequence="ALT+COMMAND+M" command="_gwIuxci6EeeNvohZVytjoQ"/>
   </bindingTables>
   <bindingTables xmi:id="_gxv4E8i6EeeNvohZVytjoQ" contributorURI="platform:/fragment/org.eclipse.e4.ui.workbench.renderers.swt.cocoa" bindingContext="_gvVdR8i6EeeNvohZVytjoQ">
-    <bindings xmi:id="_gxv4FMi6EeeNvohZVytjoQ" keySequence="M1+W" command="_gxv4Eci6EeeNvohZVytjoQ"/>
+    <bindings xmi:id="_6763MMjAEeegK_QAuz54Xw" keySequence="M1+W" command="_gxv4Eci6EeeNvohZVytjoQ"/>
   </bindingTables>
   <bindingTables xmi:id="_hYiLQci6EeeNvohZVytjoQ" bindingContext="_hYiLQMi6EeeNvohZVytjoQ"/>
   <bindingTables xmi:id="_hYiLQ8i6EeeNvohZVytjoQ" bindingContext="_hYiLQsi6EeeNvohZVytjoQ"/>
@@ -2350,7 +2350,7 @@
   <addons xmi:id="_gvWEW8i6EeeNvohZVytjoQ" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_gvWEXMi6EeeNvohZVytjoQ" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_gveAIMi6EeeNvohZVytjoQ" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_67pKYcjAEeegK_QAuz54Xw" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <addons xmi:id="_gxuC4Mi6EeeNvohZVytjoQ" elementId="org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler"/>
   <categories xmi:id="_gv-WcMi6EeeNvohZVytjoQ" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
