@@ -41,7 +41,7 @@ public class MovieBlockingKeyByDecadeGenerator extends
 	@Override
 	public void generateBlockingKeys(Movie record, Processable<Correspondence<Attribute, Matchable>> correspondences,
 			DataIterator<Pair<String, Movie>> resultCollector) {
-		resultCollector.next(new Pair<>(Integer.toString(record.getDate().getYear() / 10), record));
+		resultCollector.next(new Pair<>(Integer.toString(record.getDate().getYear()), record));
 	}
 
 }

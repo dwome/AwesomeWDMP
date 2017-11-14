@@ -5,7 +5,7 @@ import java.io.File;
 import blocker.PlayerBlockingFunction;
 import comparators.PlayerHeightComparator;
 import comparators.PlayerNameComparatorJaccard;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.ErrorAnalysis;
+
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByDecadeGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDateComparator10Years;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorLevenshtein;
@@ -16,6 +16,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Playe
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.NoBlocker;
+import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourhoodBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.LinearCombinationMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
@@ -49,6 +50,7 @@ public class IR_using_linear_combination {
 
 		StandardRecordBlocker<Player, Attribute> blocker2 = new StandardRecordBlocker<Player, Attribute>(
 				new PlayerBlockingFunction());
+		
 
 		// Initialize Matching Engine
 		MatchingEngine<Player, Attribute> engine = new MatchingEngine<>();
@@ -61,6 +63,29 @@ public class IR_using_linear_combination {
 		// write the correspondences to the output file
 		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/fifa17_2_fut17_correspondences.csv"),
 				correspondences);
+		
+		// load the gold standard (test set)
+				MatchingGoldStandard gsTest = new MatchingGoldStandard();
+				gsTest.loadFromCSVFile(new File(
+						"data/goldstandard/gs_fifa17_2_fut17.csv"));
+
+				// evaluate your result
+				MatchingEvaluator<Player, Attribute> evaluator = new MatchingEvaluator<Player, Attribute>(true);
+				Performance perfTest = evaluator.evaluateMatching(correspondences.get(),
+						gsTest);
+
+				// check which errors were made
+				new ErrorAnalysis().printFalsePositives(correspondences, gsTest);
+				new ErrorAnalysis().printFalseNegatives(dataFifa17, dataFut17, correspondences, gsTest);
+				
+				// print the evaluation result
+				System.out.println("Fifa17 <-> Fut17");
+				System.out
+						.println(String.format(
+								"Precision: %.4f\nRecall: %.4f\nF1: %.4f",
+								perfTest.getPrecision(), perfTest.getRecall(),
+								perfTest.getF1()));
+		
 
 		
 	}
