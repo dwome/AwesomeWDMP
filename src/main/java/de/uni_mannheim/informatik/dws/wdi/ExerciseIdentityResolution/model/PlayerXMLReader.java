@@ -17,6 +17,7 @@ import java.time.format.DateTimeFormatterBuilder;
 import java.time.temporal.ChronoField;
 import java.util.Locale;
 
+import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
@@ -32,13 +33,19 @@ public class PlayerXMLReader extends XMLMatchableReader<Player, Attribute> {
 
 	@Override
 	public Player createModelFromElement(Node node, String provenanceInfo) {
-		String id = getValueFromChildElement(node, "id");
+		
+
+		
+		Element eElement = (Element) node;
+        String temp = eElement.getAttribute("id");
+
 
 		// create the object with id and provenance information
-		Player player = new Player(id, provenanceInfo);
-
+		Player player = new Player(temp, provenanceInfo);
+		
 		// fill the attributes
 		player.setName(getValueFromChildElement(node, "name"));
+		
 		player.setBirthdate(getValueFromChildElement(node, "brithdate"));
 		player.setAge(Integer.parseInt(getValueFromChildElement(node, "age")));
 		player.setRating(Integer.parseInt(getValueFromChildElement(node, "rating")));
