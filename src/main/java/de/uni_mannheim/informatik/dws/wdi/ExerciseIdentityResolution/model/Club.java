@@ -25,108 +25,53 @@ import de.uni_mannheim.informatik.dws.winter.model.Matchable;
  */
 public class Club implements Matchable {
 
-	/*
-	 * example entry <movie> <id>academy_awards_2</id> <title>True Grit</title>
-	 * <director> <name>Joel Coen and Ethan Coen</name> </director> <actors>
-	 * <actor> <name>Jeff Bridges</name> </actor> <actor> <name>Hailee
-	 * Steinfeld</name> </actor> </actors> <date>2010-01-01</date> </movie>
-	 */
-
+	
+	private String name;
+	private List<Player> players;	
 	protected String id;
 	protected String provenance;
-	private String title;
-	private String director;
-	private LocalDateTime date;
-	private List<Actor> actors;
-	private String studio;
-	private String genre;
-	private double budget;
-	private double gross;
+
 
 	public Club(String identifier, String provenance) {
 		id = identifier;
 		this.provenance = provenance;
-		actors = new LinkedList<>();
+		players = new LinkedList<>();
 	}
 
-	@Override
-	public String getIdentifier() {
+	
+
+	public String getName() {
+		return name;
+	}
+
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+
+	public List<Player> getPlayers() {
+		return players;
+	}
+
+
+
+	public void setPlayers(List<Player> players) {
+		this.players = players;
+	}
+
+
+
+	public String getId() {
 		return id;
 	}
 
-	@Override
-	public String getProvenance() {
-		return provenance;
-	}
 
-	public String getTitle() {
-		return title;
-	}
 
-	public void setTitle(String title) {
-		this.title = title;
-	}
-
-	public String getDirector() {
-		return director;
-	}
-
-	public void setDirector(String director) {
-		this.director = director;
-	}
-
-	public LocalDateTime getDate() {
-		return date;
-	}
-
-	public void setDate(LocalDateTime date) {
-		this.date = date;
-	}
-
-	public List<Actor> getActors() {
-		return actors;
-	}
-
-	public void setActors(List<Actor> actors) {
-		this.actors = actors;
-	}
-	
-	public String getStudio() {
-		return studio;
-	}
-
-	public void setStudio(String studio) {
-		this.studio = studio;
-	}
-
-	public String getGenre() {
-		return genre;
-	}
-
-	public void setGenre(String genre) {
-		this.genre = genre;
-	}
-
-	public double getBudget() {
-		return budget;
-	}
-
-	public void setBudget(double budget) {
-		this.budget = budget;
-	}
-
-	public double getGross() {
-		return gross;
-	}
-
-	public void setGross(double gross) {
-		this.gross = gross;
-	}
-
-	@Override
-	public String toString() {
-		return String.format("[Movie: %s / %s / %s]", getTitle(),
-				getDirector(), getDate().toString());
+	public void setId(String id) {
+		this.id = id;
 	}
 
 	@Override
@@ -141,7 +86,23 @@ public class Club implements Matchable {
 		}else
 			return false;
 	}
-	
+
+
+
+	@Override
+	public String getIdentifier() {
+		// TODO Auto-generated method stub
+		return id;
+	}
+
+
+
+	@Override
+	public String getProvenance() {
+		// TODO Auto-generated method stub
+		return provenance;
+	}
+
 	
 	
 }
