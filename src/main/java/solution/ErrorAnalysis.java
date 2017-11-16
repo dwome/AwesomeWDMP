@@ -4,7 +4,6 @@ package solution;
 import java.util.HashSet;
 import java.util.Set;
 
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.DataSet;
@@ -76,7 +75,10 @@ public class ErrorAnalysis {
 			}
 			
 			// print both records to the console
-			System.out.println(String.format("[Missing Correspondence]\n\t%s\n\t%s\n", m1,m2));
+			if(m1 != null && m2 != null)
+			{
+			System.out.println("[Missing Correspondence]");
+			}
 		}
 	}
 }

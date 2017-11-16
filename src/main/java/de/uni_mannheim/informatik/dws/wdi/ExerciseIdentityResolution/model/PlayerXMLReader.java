@@ -34,20 +34,17 @@ public class PlayerXMLReader extends XMLMatchableReader<Player, Attribute> {
 	@Override
 	public Player createModelFromElement(Node node, String provenanceInfo) {
 		
-
-		
-		Element eElement = (Element) node;
-        String temp = eElement.getAttribute("id");
-
+		String id = getValueFromChildElement(node, "id");
 
 		// create the object with id and provenance information
-		Player player = new Player(temp, provenanceInfo);
+		Player player = new Player(id, provenanceInfo);
 		
 		// fill the attributes
 		player.setName(getValueFromChildElement(node, "name"));
 		
 		player.setBirthdate(getValueFromChildElement(node, "brithdate"));
 		player.setAge(Integer.parseInt(getValueFromChildElement(node, "age")));
+		
 		player.setRating(Integer.parseInt(getValueFromChildElement(node, "rating")));
 		player.setHeight(Integer.parseInt(getValueFromChildElement(node, "height")));
 		player.setWeight(Integer.parseInt(getValueFromChildElement(node, "weight")));
