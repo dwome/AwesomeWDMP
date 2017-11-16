@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <stadiums xsi:noNamespaceSchemaLocation="file:///C:/Users/micha/Documents/Uni/WDI%20Projekt/Target%20Schema/Target%20Schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<stadium>
-		<id>stadiums_20150302_1</id>
+		<id>stadiums_20150302_20001</id>
 		<name>Emirates Stadium </name>
 		<location>
 			<country>England</country>
@@ -16,7 +16,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_2</id>
+		<id>stadiums_20150302_20002</id>
 		<name>Villa Park </name>
 		<location>
 			<country>England</country>
@@ -31,7 +31,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_3</id>
+		<id>stadiums_20150302_20003</id>
 		<name>Ewood Park </name>
 		<location>
 			<country>England</country>
@@ -46,7 +46,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_4</id>
+		<id>stadiums_20150302_20004</id>
 		<name>Reebok Stadium </name>
 		<location>
 			<country>England</country>
@@ -61,7 +61,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_5</id>
+		<id>stadiums_20150302_20005</id>
 		<name>Stamford Bridge </name>
 		<location>
 			<country>England</country>
@@ -76,7 +76,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_6</id>
+		<id>stadiums_20150302_20006</id>
 		<name>Goodison Park </name>
 		<location>
 			<country>England</country>
@@ -91,7 +91,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_7</id>
+		<id>stadiums_20150302_20007</id>
 		<name>Craven Cottage </name>
 		<location>
 			<country>England</country>
@@ -106,7 +106,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_8</id>
+		<id>stadiums_20150302_20008</id>
 		<name>Anfield </name>
 		<location>
 			<country>England</country>
@@ -121,7 +121,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_9</id>
+		<id>stadiums_20150302_20009</id>
 		<name>Etihad Stadium</name>
 		<location>
 			<country>England</country>
@@ -136,7 +136,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_10</id>
+		<id>stadiums_20150302_20010</id>
 		<name>Old Trafford </name>
 		<location>
 			<country>England</country>
@@ -151,7 +151,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_11</id>
+		<id>stadiums_20150302_20011</id>
 		<name>Sports Direct Arena</name>
 		<location>
 			<country>England</country>
@@ -166,7 +166,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_12</id>
+		<id>stadiums_20150302_20012</id>
 		<name>Carrow Road </name>
 		<location>
 			<country>England</country>
@@ -181,7 +181,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_13</id>
+		<id>stadiums_20150302_20013</id>
 		<name>Loftus Road </name>
 		<location>
 			<country>England</country>
@@ -196,7 +196,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_14</id>
+		<id>stadiums_20150302_20014</id>
 		<name>Britannia Stadium </name>
 		<location>
 			<country>England</country>
@@ -211,7 +211,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_15</id>
+		<id>stadiums_20150302_20015</id>
 		<name>Stadium of Light </name>
 		<location>
 			<country>England</country>
@@ -226,7 +226,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_16</id>
+		<id>stadiums_20150302_20016</id>
 		<name>Liberty Stadium </name>
 		<location>
 			<country>England</country>
@@ -241,7 +241,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_17</id>
+		<id>stadiums_20150302_20017</id>
 		<name>White Hart Lane </name>
 		<location>
 			<country>England</country>
@@ -256,7 +256,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_18</id>
+		<id>stadiums_20150302_20018</id>
 		<name>The Hawthorns </name>
 		<location>
 			<country>England</country>
@@ -271,7 +271,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_19</id>
+		<id>stadiums_20150302_20019</id>
 		<name>DW Stadium </name>
 		<location>
 			<country>England</country>
@@ -286,7 +286,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_20</id>
+		<id>stadiums_20150302_20020</id>
 		<name>Molineux Stadium </name>
 		<location>
 			<country>England</country>
@@ -301,7 +301,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_21</id>
+		<id>stadiums_20150302_20021</id>
 		<name>Oakwell </name>
 		<location>
 			<country>England</country>
@@ -316,7 +316,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_22</id>
+		<id>stadiums_20150302_20022</id>
 		<name>St Andrew's Stadium </name>
 		<location>
 			<country>England</country>
@@ -331,7 +331,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_23</id>
+		<id>stadiums_20150302_20023</id>
 		<name>Bloomfield Road </name>
 		<location>
 			<country>England</country>
@@ -346,7 +346,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_24</id>
+		<id>stadiums_20150302_20024</id>
 		<name>American Express Community Stadium </name>
 		<location>
 			<country>England</country>
@@ -361,7 +361,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_25</id>
+		<id>stadiums_20150302_20025</id>
 		<name>Ashton Gate </name>
 		<location>
 			<country>England</country>
@@ -376,7 +376,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_26</id>
+		<id>stadiums_20150302_20026</id>
 		<name>Turf Moor </name>
 		<location>
 			<country>England</country>
@@ -391,7 +391,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_27</id>
+		<id>stadiums_20150302_20027</id>
 		<name>Cardiff City Stadium </name>
 		<location>
 			<country>England</country>
@@ -406,7 +406,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_28</id>
+		<id>stadiums_20150302_20028</id>
 		<name>Ricoh Arena </name>
 		<location>
 			<country>England</country>
@@ -421,7 +421,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_29</id>
+		<id>stadiums_20150302_20029</id>
 		<name>Selhurst Park </name>
 		<location>
 			<country>England</country>
@@ -436,7 +436,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_30</id>
+		<id>stadiums_20150302_20030</id>
 		<name>Pride Park Stadium </name>
 		<location>
 			<country>England</country>
@@ -451,7 +451,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_31</id>
+		<id>stadiums_20150302_20031</id>
 		<name>Keepmoat Stadium </name>
 		<location>
 			<country>England</country>
@@ -466,7 +466,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_32</id>
+		<id>stadiums_20150302_20032</id>
 		<name>KC Stadium </name>
 		<location>
 			<country>England</country>
@@ -481,7 +481,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_33</id>
+		<id>stadiums_20150302_20033</id>
 		<name>Portman Road </name>
 		<location>
 			<country>England</country>
@@ -496,7 +496,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_34</id>
+		<id>stadiums_20150302_20034</id>
 		<name>Elland Road </name>
 		<location>
 			<country>England</country>
@@ -511,7 +511,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_35</id>
+		<id>stadiums_20150302_20035</id>
 		<name>King Power Stadium </name>
 		<location>
 			<country>England</country>
@@ -526,7 +526,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_36</id>
+		<id>stadiums_20150302_20036</id>
 		<name>Riverside Stadium </name>
 		<location>
 			<country>England</country>
@@ -541,7 +541,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_37</id>
+		<id>stadiums_20150302_20037</id>
 		<name>The Den </name>
 		<location>
 			<country>England</country>
@@ -556,7 +556,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_38</id>
+		<id>stadiums_20150302_20038</id>
 		<name>City Ground </name>
 		<location>
 			<country>England</country>
@@ -571,7 +571,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_39</id>
+		<id>stadiums_20150302_20039</id>
 		<name>London Road Stadium </name>
 		<location>
 			<country>England</country>
@@ -586,7 +586,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_40</id>
+		<id>stadiums_20150302_20040</id>
 		<name>Fratton Park </name>
 		<location>
 			<country>England</country>
@@ -601,7 +601,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_41</id>
+		<id>stadiums_20150302_20041</id>
 		<name>Madejski Stadium </name>
 		<location>
 			<country>England</country>
@@ -616,7 +616,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_42</id>
+		<id>stadiums_20150302_20042</id>
 		<name>St Mary's Stadium </name>
 		<location>
 			<country>England</country>
@@ -631,7 +631,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_43</id>
+		<id>stadiums_20150302_20043</id>
 		<name>Vicarage Road </name>
 		<location>
 			<country>England</country>
@@ -646,7 +646,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_44</id>
+		<id>stadiums_20150302_20044</id>
 		<name>Boleyn Ground </name>
 		<location>
 			<country>England</country>
@@ -661,7 +661,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_45</id>
+		<id>stadiums_20150302_20045</id>
 		<name>Almondvale Stadium </name>
 		<location>
 			<country>Scotland</country>
@@ -676,7 +676,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_46</id>
+		<id>stadiums_20150302_20046</id>
 		<name>Caledonian Stadium </name>
 		<location>
 			<country>Scotland</country>
@@ -691,7 +691,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_47</id>
+		<id>stadiums_20150302_20047</id>
 		<name>Celtic Park </name>
 		<location>
 			<country>Scotland</country>
@@ -706,7 +706,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_48</id>
+		<id>stadiums_20150302_20048</id>
 		<name>Dens Park </name>
 		<location>
 			<country>Scotland</country>
@@ -721,7 +721,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_49</id>
+		<id>stadiums_20150302_20049</id>
 		<name>East End Park </name>
 		<location>
 			<country>Scotland</country>
@@ -736,7 +736,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_50</id>
+		<id>stadiums_20150302_20050</id>
 		<name>Easter Road </name>
 		<location>
 			<country>Scotland</country>
@@ -751,7 +751,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_51</id>
+		<id>stadiums_20150302_20051</id>
 		<name>Falkirk Stadium </name>
 		<location>
 			<country>Scotland</country>
@@ -766,7 +766,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_52</id>
+		<id>stadiums_20150302_20052</id>
 		<name>Fir Park </name>
 		<location>
 			<country>Scotland</country>
@@ -781,7 +781,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_53</id>
+		<id>stadiums_20150302_20053</id>
 		<name>Firhill Stadium </name>
 		<location>
 			<country>Scotland</country>
@@ -796,7 +796,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_54</id>
+		<id>stadiums_20150302_20054</id>
 		<name>Ibrox Stadium </name>
 		<location>
 			<country>Scotland</country>
@@ -811,7 +811,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_55</id>
+		<id>stadiums_20150302_20055</id>
 		<name>McDiarmid Park </name>
 		<location>
 			<country>Scotland</country>
@@ -826,7 +826,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_56</id>
+		<id>stadiums_20150302_20056</id>
 		<name>New Douglas Park </name>
 		<location>
 			<country>Scotland</country>
@@ -841,7 +841,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_57</id>
+		<id>stadiums_20150302_20057</id>
 		<name>Pittodrie Stadium </name>
 		<location>
 			<country>Scotland</country>
@@ -856,7 +856,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_58</id>
+		<id>stadiums_20150302_20058</id>
 		<name>Rugby Park </name>
 		<location>
 			<country>Scotland</country>
@@ -871,7 +871,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_59</id>
+		<id>stadiums_20150302_20059</id>
 		<name>St. Mirren Park </name>
 		<location>
 			<country>Scotland</country>
@@ -886,7 +886,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_60</id>
+		<id>stadiums_20150302_20060</id>
 		<name>Tannadice Park </name>
 		<location>
 			<country>Scotland</country>
@@ -901,7 +901,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_61</id>
+		<id>stadiums_20150302_20061</id>
 		<name>Tynecastle Stadium </name>
 		<location>
 			<country>Scotland</country>
@@ -916,7 +916,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_62</id>
+		<id>stadiums_20150302_20062</id>
 		<name>Victoria Park </name>
 		<location>
 			<country>Scotland</country>
@@ -931,7 +931,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_63</id>
+		<id>stadiums_20150302_20063</id>
 		<name>SGL arena </name>
 		<location>
 			<country>Germany</country>
@@ -946,7 +946,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_64</id>
+		<id>stadiums_20150302_20064</id>
 		<name>BayArena </name>
 		<location>
 			<country>Germany</country>
@@ -961,7 +961,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_65</id>
+		<id>stadiums_20150302_20065</id>
 		<name>Allianz Arena </name>
 		<location>
 			<country>Germany</country>
@@ -976,7 +976,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_66</id>
+		<id>stadiums_20150302_20066</id>
 		<name>Signal Iduna Park </name>
 		<location>
 			<country>Germany</country>
@@ -991,7 +991,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_67</id>
+		<id>stadiums_20150302_20067</id>
 		<name>Borussia-Park </name>
 		<location>
 			<country>Germany</country>
@@ -1006,7 +1006,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_68</id>
+		<id>stadiums_20150302_20068</id>
 		<name>Eintracht-Stadion </name>
 		<location>
 			<country>Germany</country>
@@ -1021,7 +1021,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_69</id>
+		<id>stadiums_20150302_20069</id>
 		<name>Commerzbank-Arena </name>
 		<location>
 			<country>Germany</country>
@@ -1036,7 +1036,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_70</id>
+		<id>stadiums_20150302_20070</id>
 		<name>MAGE SOLAR Stadion </name>
 		<location>
 			<country>Germany</country>
@@ -1051,7 +1051,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_71</id>
+		<id>stadiums_20150302_20071</id>
 		<name>Imtech Arena </name>
 		<location>
 			<country>Germany</country>
@@ -1066,7 +1066,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_72</id>
+		<id>stadiums_20150302_20072</id>
 		<name>HDI-Arena </name>
 		<location>
 			<country>Germany</country>
@@ -1081,7 +1081,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_73</id>
+		<id>stadiums_20150302_20073</id>
 		<name>Olympiastadion </name>
 		<location>
 			<country>Germany</country>
@@ -1096,7 +1096,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_74</id>
+		<id>stadiums_20150302_20074</id>
 		<name>Rhein-Neckar Arena </name>
 		<location>
 			<country>Germany</country>
@@ -1111,7 +1111,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_75</id>
+		<id>stadiums_20150302_20075</id>
 		<name>Coface Arena </name>
 		<location>
 			<country>Germany</country>
@@ -1126,7 +1126,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_76</id>
+		<id>stadiums_20150302_20076</id>
 		<name>Grundig-Stadion </name>
 		<location>
 			<country>Germany</country>
@@ -1141,7 +1141,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_77</id>
+		<id>stadiums_20150302_20077</id>
 		<name>Veltins-Arena </name>
 		<location>
 			<country>Germany</country>
@@ -1156,7 +1156,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_78</id>
+		<id>stadiums_20150302_20078</id>
 		<name>Mercedes-Benz Arena </name>
 		<location>
 			<country>Germany</country>
@@ -1171,7 +1171,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_79</id>
+		<id>stadiums_20150302_20079</id>
 		<name>Weserstadion </name>
 		<location>
 			<country>Germany</country>
@@ -1186,7 +1186,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_80</id>
+		<id>stadiums_20150302_20080</id>
 		<name>Volkswagen Arena </name>
 		<location>
 			<country>Germany</country>
@@ -1201,7 +1201,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_81</id>
+		<id>stadiums_20150302_20081</id>
 		<name>Esprit Arena </name>
 		<location>
 			<country>Germany</country>
@@ -1216,7 +1216,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_82</id>
+		<id>stadiums_20150302_20082</id>
 		<name>Trolli Arena </name>
 		<location>
 			<country>Germany</country>
@@ -1231,7 +1231,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_83</id>
+		<id>stadiums_20150302_20083</id>
 		<name>Fritz-Walter-Stadion </name>
 		<location>
 			<country>Germany</country>
@@ -1246,7 +1246,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_84</id>
+		<id>stadiums_20150302_20084</id>
 		<name>RheinEnergieStadion </name>
 		<location>
 			<country>Germany</country>
@@ -1261,7 +1261,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_85</id>
+		<id>stadiums_20150302_20085</id>
 		<name>Millerntor-Stadion </name>
 		<location>
 			<country>Germany</country>
@@ -1276,7 +1276,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_86</id>
+		<id>stadiums_20150302_20086</id>
 		<name>Estadio del Mediterráneo </name>
 		<location>
 			<country>Spain</country>
@@ -1291,7 +1291,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_87</id>
+		<id>stadiums_20150302_20087</id>
 		<name>San Mamés </name>
 		<location>
 			<country>Spain</country>
@@ -1306,7 +1306,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_88</id>
+		<id>stadiums_20150302_20088</id>
 		<name>Vicente Calderón </name>
 		<location>
 			<country>Spain</country>
@@ -1321,7 +1321,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_89</id>
+		<id>stadiums_20150302_20089</id>
 		<name>Camp Nou </name>
 		<location>
 			<country>Spain</country>
@@ -1336,7 +1336,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_90</id>
+		<id>stadiums_20150302_20090</id>
 		<name>Benito Villamarín </name>
 		<location>
 			<country>Spain</country>
@@ -1351,7 +1351,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_91</id>
+		<id>stadiums_20150302_20091</id>
 		<name>Balaídos </name>
 		<location>
 			<country>Spain</country>
@@ -1366,7 +1366,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_92</id>
+		<id>stadiums_20150302_20092</id>
 		<name>Martínez Valero </name>
 		<location>
 			<country>Spain</country>
@@ -1381,7 +1381,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_93</id>
+		<id>stadiums_20150302_20093</id>
 		<name>Cornellà-El Prat </name>
 		<location>
 			<country>Spain</country>
@@ -1396,7 +1396,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_94</id>
+		<id>stadiums_20150302_20094</id>
 		<name>Coliseum Alfonso Pérez </name>
 		<location>
 			<country>Spain</country>
@@ -1411,7 +1411,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_95</id>
+		<id>stadiums_20150302_20095</id>
 		<name>Nuevo Los Cármenes </name>
 		<location>
 			<country>Spain</country>
@@ -1426,7 +1426,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_96</id>
+		<id>stadiums_20150302_20096</id>
 		<name>Ciutat de València </name>
 		<location>
 			<country>Spain</country>
@@ -1441,7 +1441,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_97</id>
+		<id>stadiums_20150302_20097</id>
 		<name>La Rosaleda </name>
 		<location>
 			<country>Spain</country>
@@ -1456,7 +1456,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_98</id>
+		<id>stadiums_20150302_20098</id>
 		<name>El Sadar </name>
 		<location>
 			<country>Spain</country>
@@ -1471,7 +1471,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_99</id>
+		<id>stadiums_20150302_20099</id>
 		<name>Campo de Vallecas </name>
 		<location>
 			<country>Spain</country>
@@ -1486,7 +1486,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_100</id>
+		<id>stadiums_20150302_20100</id>
 		<name>Santiago Bernabéu </name>
 		<location>
 			<country>Spain</country>
@@ -1501,7 +1501,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_101</id>
+		<id>stadiums_20150302_20101</id>
 		<name>Anoeta </name>
 		<location>
 			<country>Spain</country>
@@ -1516,7 +1516,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_102</id>
+		<id>stadiums_20150302_20102</id>
 		<name>Ramón Sánchez Pizjuán </name>
 		<location>
 			<country>Spain</country>
@@ -1531,7 +1531,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_103</id>
+		<id>stadiums_20150302_20103</id>
 		<name>Mestalla </name>
 		<location>
 			<country>Spain</country>
@@ -1546,7 +1546,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_104</id>
+		<id>stadiums_20150302_20104</id>
 		<name>Nuevo José Zorrilla </name>
 		<location>
 			<country>Spain</country>
@@ -1561,7 +1561,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_105</id>
+		<id>stadiums_20150302_20105</id>
 		<name>El Madrigal </name>
 		<location>
 			<country>Spain</country>
@@ -1576,7 +1576,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_106</id>
+		<id>stadiums_20150302_20106</id>
 		<name>Riazor </name>
 		<location>
 			<country>Spain</country>
@@ -1591,7 +1591,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_107</id>
+		<id>stadiums_20150302_20107</id>
 		<name>Iberostar Stadium </name>
 		<location>
 			<country>Spain</country>
@@ -1606,7 +1606,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_108</id>
+		<id>stadiums_20150302_20108</id>
 		<name>La Romareda </name>
 		<location>
 			<country>Spain</country>
@@ -1621,7 +1621,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_109</id>
+		<id>stadiums_20150302_20109</id>
 		<name>Stade François Coty </name>
 		<location>
 			<country>France</country>
@@ -1636,7 +1636,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_110</id>
+		<id>stadiums_20150302_20110</id>
 		<name>Stade Armand Cesari </name>
 		<location>
 			<country>France</country>
@@ -1651,7 +1651,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_111</id>
+		<id>stadiums_20150302_20111</id>
 		<name>Stade Chaban-Delmas </name>
 		<location>
 			<country>France</country>
@@ -1666,7 +1666,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_112</id>
+		<id>stadiums_20150302_20112</id>
 		<name>Parc des Sports </name>
 		<location>
 			<country>France</country>
@@ -1681,7 +1681,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_113</id>
+		<id>stadiums_20150302_20113</id>
 		<name>Stade du Roudourou </name>
 		<location>
 			<country>France</country>
@@ -1696,7 +1696,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_114</id>
+		<id>stadiums_20150302_20114</id>
 		<name>Stade Pierre-Mauroy </name>
 		<location>
 			<country>France</country>
@@ -1711,7 +1711,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_115</id>
+		<id>stadiums_20150302_20115</id>
 		<name>Stade du Moustoir </name>
 		<location>
 			<country>France</country>
@@ -1726,7 +1726,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_116</id>
+		<id>stadiums_20150302_20116</id>
 		<name>Stade de Gerland </name>
 		<location>
 			<country>France</country>
@@ -1741,7 +1741,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_117</id>
+		<id>stadiums_20150302_20117</id>
 		<name>Stade Velodrome</name>
 		<location>
 			<country>France</country>
@@ -1756,7 +1756,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_118</id>
+		<id>stadiums_20150302_20118</id>
 		<name>Stade Louis II </name>
 		<location>
 			<country>France</country>
@@ -1771,7 +1771,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_119</id>
+		<id>stadiums_20150302_20119</id>
 		<name>Stade de la Mosson </name>
 		<location>
 			<country>France</country>
@@ -1786,7 +1786,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_120</id>
+		<id>stadiums_20150302_20120</id>
 		<name>Stade de la Beaujoire </name>
 		<location>
 			<country>France</country>
@@ -1801,7 +1801,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_121</id>
+		<id>stadiums_20150302_20121</id>
 		<name>Allianz Riviera </name>
 		<location>
 			<country>France</country>
@@ -1816,7 +1816,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_122</id>
+		<id>stadiums_20150302_20122</id>
 		<name>Parc des Princes </name>
 		<location>
 			<country>France</country>
@@ -1831,7 +1831,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_123</id>
+		<id>stadiums_20150302_20123</id>
 		<name>Stade Auguste-Delaune II </name>
 		<location>
 			<country>France</country>
@@ -1846,7 +1846,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_124</id>
+		<id>stadiums_20150302_20124</id>
 		<name>Stade de la Route de Lorient </name>
 		<location>
 			<country>France</country>
@@ -1861,7 +1861,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_125</id>
+		<id>stadiums_20150302_20125</id>
 		<name>Stade Geoffroy-Guichard</name>
 		<location>
 			<country>France</country>
@@ -1876,7 +1876,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_126</id>
+		<id>stadiums_20150302_20126</id>
 		<name>Stade Auguste Bonal </name>
 		<location>
 			<country>France</country>
@@ -1891,7 +1891,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_127</id>
+		<id>stadiums_20150302_20127</id>
 		<name>Stadium Municipal</name>
 		<location>
 			<country>France</country>
@@ -1906,7 +1906,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_128</id>
+		<id>stadiums_20150302_20128</id>
 		<name>Stade du Hainaut </name>
 		<location>
 			<country>France</country>
@@ -1921,7 +1921,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_129</id>
+		<id>stadiums_20150302_20129</id>
 		<name>Stade Marcel Picot </name>
 		<location>
 			<country>France</country>
@@ -1936,7 +1936,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_130</id>
+		<id>stadiums_20150302_20130</id>
 		<name>Stade Gaston Gérard </name>
 		<location>
 			<country>France</country>
@@ -1951,7 +1951,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_131</id>
+		<id>stadiums_20150302_20131</id>
 		<name>Stade de l'Aube </name>
 		<location>
 			<country>France</country>
@@ -1966,7 +1966,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_132</id>
+		<id>stadiums_20150302_20132</id>
 		<name>Stade de l'Abbé-Deschamps </name>
 		<location>
 			<country>France</country>
@@ -1981,7 +1981,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_133</id>
+		<id>stadiums_20150302_20133</id>
 		<name>Stade Francis-Le Blé </name>
 		<location>
 			<country>France</country>
@@ -1996,7 +1996,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_134</id>
+		<id>stadiums_20150302_20134</id>
 		<name>Stade Michel d'Ornano </name>
 		<location>
 			<country>France</country>
@@ -2011,7 +2011,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_135</id>
+		<id>stadiums_20150302_20135</id>
 		<name>El Molinón</name>
 		<location>
 			<country>Spain</country>
@@ -2026,7 +2026,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_136</id>
+		<id>stadiums_20150302_20136</id>
 		<name>Campos de Sport de El Sardinero</name>
 		<location>
 			<country>Spain</country>
@@ -2041,7 +2041,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_137</id>
+		<id>stadiums_20150302_20137</id>
 		<name>Boundary Park</name>
 		<location>
 			<country>England</country>
@@ -2056,7 +2056,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_138</id>
+		<id>stadiums_20150302_20138</id>
 		<name>Bramall Lane</name>
 		<location>
 			<country>England</country>
@@ -2071,7 +2071,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_139</id>
+		<id>stadiums_20150302_20139</id>
 		<name>Selhurst Park</name>
 		<location>
 			<country>England</country>
@@ -2085,7 +2085,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_140</id>
+		<id>stadiums_20150302_20140</id>
 		<name>Hillsborough</name>
 		<location>
 			<country>England</country>
@@ -2100,7 +2100,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_141</id>
+		<id>stadiums_20150302_20141</id>
 		<name>County Ground</name>
 		<location>
 			<country>England</country>
@@ -2115,7 +2115,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_142</id>
+		<id>stadiums_20150302_20142</id>
 		<name>The Valley </name>
 		<location>
 			<country>England</country>
@@ -2130,7 +2130,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_143</id>
+		<id>stadiums_20150302_20143</id>
 		<name>Valley Parade</name>
 		<location>
 			<country>England</country>
@@ -2145,7 +2145,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_144</id>
+		<id>stadiums_20150302_20144</id>
 		<name>Blundell park</name>
 		<location>
 			<country>England</country>
@@ -2160,7 +2160,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_145</id>
+		<id>stadiums_20150302_20145</id>
 		<name>Kenilworth Road</name>
 		<location>
 			<country>England</country>
@@ -2175,7 +2175,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_146</id>
+		<id>stadiums_20150302_20146</id>
 		<name>Meadow Lane</name>
 		<location>
 			<country>England</country>
@@ -2190,7 +2190,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_147</id>
+		<id>stadiums_20150302_20147</id>
 		<name>Kassam Stadium</name>
 		<location>
 			<country>England</country>
@@ -2205,7 +2205,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_148</id>
+		<id>stadiums_20150302_20148</id>
 		<name>Roots Hall</name>
 		<location>
 			<country>England</country>
@@ -2220,7 +2220,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_149</id>
+		<id>stadiums_20150302_20149</id>
 		<name>Prenton Park</name>
 		<location>
 			<country>England</country>
@@ -2235,7 +2235,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_150</id>
+		<id>stadiums_20150302_20150</id>
 		<name>The John Smith's Stadium</name>
 		<location>
 			<country>England</country>
@@ -2250,7 +2250,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_151</id>
+		<id>stadiums_20150302_20151</id>
 		<name>Vale Park</name>
 		<location>
 			<country>England</country>
@@ -2265,7 +2265,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_152</id>
+		<id>stadiums_20150302_20152</id>
 		<name>Gigg Lane</name>
 		<location>
 			<country>England</country>
@@ -2280,7 +2280,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_153</id>
+		<id>stadiums_20150302_20153</id>
 		<name>Alexandra Stadium</name>
 		<location>
 			<country>England</country>
@@ -2295,7 +2295,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_154</id>
+		<id>stadiums_20150302_20154</id>
 		<name>Edgeley Park</name>
 		<location>
 			<country>England</country>
@@ -2310,7 +2310,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_155</id>
+		<id>stadiums_20150302_20155</id>
 		<name>Banks's Stadium</name>
 		<location>
 			<country>England</country>
@@ -2325,7 +2325,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_156</id>
+		<id>stadiums_20150302_20156</id>
 		<name>Priestfield</name>
 		<location>
 			<country>England</country>
@@ -2340,7 +2340,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_157</id>
+		<id>stadiums_20150302_20157</id>
 		<name>Deepdale</name>
 		<location>
 			<country>England</country>
@@ -2355,7 +2355,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_158</id>
+		<id>stadiums_20150302_20158</id>
 		<name>New York Stadium</name>
 		<location>
 			<country>England</country>
@@ -2370,7 +2370,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_159</id>
+		<id>stadiums_20150302_20159</id>
 		<name>Home Park</name>
 		<location>
 			<country>England</country>
@@ -2385,7 +2385,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_160</id>
+		<id>stadiums_20150302_20160</id>
 		<name>Colchester Community Stadium</name>
 		<location>
 			<country>England</country>
@@ -2400,7 +2400,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_161</id>
+		<id>stadiums_20150302_20161</id>
 		<name>Glanford Park</name>
 		<location>
 			<country>England</country>
@@ -2415,7 +2415,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_162</id>
+		<id>stadiums_20150302_20162</id>
 		<name>Goldsands Stadium</name>
 		<location>
 			<country>England</country>
@@ -2430,7 +2430,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_163</id>
+		<id>stadiums_20150302_20163</id>
 		<name>Huish Park</name>
 		<location>
 			<country>England</country>
@@ -2445,7 +2445,7 @@
 		</clubs>
 	</stadium>
 	<stadium>
-		<id>stadiums_20150302_164</id>
+		<id>stadiums_20150302_20164</id>
 		<name>Griffin Park</name>
 		<location>
 			<country>England</country>
