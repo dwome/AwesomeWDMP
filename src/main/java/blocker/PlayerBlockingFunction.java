@@ -18,7 +18,7 @@ public class PlayerBlockingFunction extends
 		@Override
 		public void generateBlockingKeys(Player record, Processable<Correspondence<Attribute, Matchable>> correspondences,
 				DataIterator<Pair<String, Player>> resultCollector) {
-			resultCollector.next(new Pair<>(Integer.toString(record.getRating()), record));
+			resultCollector.next(new Pair<>(Integer.toString(record.getHeight()), record));
 			
 		}
 
