@@ -9,7 +9,7 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.DataIterator;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
-public class PlayerBlockingFunction extends
+public class PlayerBlockingFunctionAge extends
 			RecordBlockingKeyGenerator<Player, Attribute> {
 
 		private static final long serialVersionUID = 1L;
@@ -18,7 +18,7 @@ public class PlayerBlockingFunction extends
 		@Override
 		public void generateBlockingKeys(Player record, Processable<Correspondence<Attribute, Matchable>> correspondences,
 				DataIterator<Pair<String, Player>> resultCollector) {
-			resultCollector.next(new Pair<>(Integer.toString(record.getHeight()), record));
+			resultCollector.next(new Pair<>(Integer.toString(record.getAge()), record));
 			
 		}
 

@@ -1,10 +1,12 @@
-package solution;
+package solution_player;
 
 import java.io.File;
 
-import blocker.PlayerBlockingFunction;
+import blocker.PlayerBlockingFunctionAge;
+import blocker.PlayerBlockingFunctionRating;
 import comparators.PlayerHeightComparator;
 import comparators.PlayerNameComparatorJaccard;
+import comparators.PlayerNationalityComparator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.PlayerXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
@@ -36,17 +38,18 @@ public class IR_using_linear_combination_fifa_transfermarkt {
 	
 
 		// create a matching rule
-		LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.8);
+		LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.6);
 
 		// add comparators
-		matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.5);
-		matchingRule.addComparator(new PlayerHeightComparator(), 0.5);
+		matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.6);
+		matchingRule.addComparator(new PlayerHeightComparator(), 0.2);
+		matchingRule.addComparator(new PlayerNationalityComparator(), 0.2);
 
 		// create a blocker (blocking strategy)
 		NoBlocker<Player, Attribute> blocker = new NoBlocker<Player, Attribute>();
 
 		StandardRecordBlocker<Player, Attribute> blocker2 = new StandardRecordBlocker<Player, Attribute>(
-				new PlayerBlockingFunction());
+				new PlayerBlockingFunctionAge());
 		
 
 		// Initialize Matching Engine
