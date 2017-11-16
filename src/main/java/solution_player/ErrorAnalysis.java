@@ -1,4 +1,4 @@
-package solution;
+package solution_player;
 
 
 import java.util.HashSet;
@@ -28,7 +28,7 @@ public class ErrorAnalysis {
 				Player m2 = c.getSecondRecord();
 				
 				// print both records to the console
-				System.out.println(String.format("[Incorrect Correspondence]\n\t%s\n\t%s\n", m1,m2));	
+				System.out.println(String.format("[Incorrect Correspondence]" + m1.getId() +" "+m2.getId()));	
 			}
 		}		
 	}

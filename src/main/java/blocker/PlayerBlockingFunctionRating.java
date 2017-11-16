@@ -9,7 +9,7 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.DataIterator;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
-public class PlayerBlockingFunction extends
+public class PlayerBlockingFunctionRating extends
 			RecordBlockingKeyGenerator<Player, Attribute> {
 
 		private static final long serialVersionUID = 1L;
