@@ -23,8 +23,6 @@ public class ClubNameComparatorJaccard implements Comparator<Club, Attribute> {
 
 		// postprocessing
 		similarity *= similarity;
-
 		return similarity;
 	}
-
 }

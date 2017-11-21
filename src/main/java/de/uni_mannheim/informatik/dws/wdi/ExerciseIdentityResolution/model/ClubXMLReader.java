@@ -49,7 +49,7 @@ public class ClubXMLReader extends XMLMatchableReader<Club, Attribute>  {
 		Club club = new Club(id, provenanceInfo);
 
 		// fill the attributes
-		club.setName(getValueFromChildElement(node, "title"));
+		club.setName(getValueFromChildElement(node, "name"));
 		
 		// load the list of actors
 		List<Player> players = getObjectListFromChildElement(node, "players",

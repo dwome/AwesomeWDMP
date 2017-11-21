@@ -54,7 +54,7 @@ public class IR_using_linear_combination_stadium_fifa {
 		MatchingEngine<Club, Attribute> engine = new MatchingEngine<>();
 
 		// Execute the matching
-		Processable<Correspondence<Club, Attribute>> correspondences = engine.runIdentityResolution(dataStadium, dataFifa17, null, matchingRule,noblocker);
+		Processable<Correspondence<Club, Attribute>> correspondences = engine.runIdentityResolution(dataStadium, dataFifa17, null, matchingRule,blocker2);
 
 		// write the correspondences to the output file
 		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/stadium_2_fifa17_correspondences.csv"),
