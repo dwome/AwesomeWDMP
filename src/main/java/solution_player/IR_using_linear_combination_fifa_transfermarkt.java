@@ -2,9 +2,11 @@ package solution_player;
 
 import java.io.File;
 
-import blocker.PlayerBlockingFunctionAge;
-import blocker.PlayerBlockingFunctionRating;
+import blocker.PlayerBlockingFunctionBirthdate;
+import comparators.PlayerBirthdateComparatorJaccard;
 import comparators.PlayerHeightComparator;
+import comparators.PlayerWeightComparator;
+import comparators.PlayerAgeComparatorFifa2Trans;
 import comparators.PlayerNameComparatorJaccard;
 import comparators.PlayerNationalityComparator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
@@ -41,15 +43,18 @@ public class IR_using_linear_combination_fifa_transfermarkt {
 		LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.6);
 
 		// add comparators
-		matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.6);
-		matchingRule.addComparator(new PlayerHeightComparator(), 0.2);
-		matchingRule.addComparator(new PlayerNationalityComparator(), 0.2);
+		matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.8);
+		//matchingRule.addComparator(new PlayerAgeComparatorFifa2Trans(), 0.2);
+		matchingRule.addComparator(new PlayerBirthdateComparatorJaccard(), 2.0);
+		matchingRule.addComparator(new PlayerWeightComparator(), 0.3);
+		matchingRule.addComparator(new PlayerHeightComparator(), 0.3);
+		//matchingRule.addComparator(new PlayerRatingComparator(), 0.2);
 
 		// create a blocker (blocking strategy)
 		NoBlocker<Player, Attribute> blocker = new NoBlocker<Player, Attribute>();
 
 		StandardRecordBlocker<Player, Attribute> blocker2 = new StandardRecordBlocker<Player, Attribute>(
-				new PlayerBlockingFunctionAge());
+				new PlayerBlockingFunctionBirthdate());
 		
 
 		// Initialize Matching Engine
@@ -79,6 +84,14 @@ public class IR_using_linear_combination_fifa_transfermarkt {
 				new ErrorAnalysis().printFalseNegatives(dataFifa17, dataTrans, correspondences, gsTest);
 				
 				// print the evaluation result
+				
+				System.out.println("Name weight: 0.8");
+				System.out.println("Birthdate weight: 2.0");
+				//System.out.println("Age weight: 0.2");
+				//System.out.println("Position weight: 0.5");
+				System.out.println("Height weight: 0.3");
+				System.out.println("Weight weight: 0.3");
+				//System.out.println("Rating weight: 0.2");
 				System.out.println("Fifa17 <-> Transfermarkt");
 				System.out
 						.println(String.format(
