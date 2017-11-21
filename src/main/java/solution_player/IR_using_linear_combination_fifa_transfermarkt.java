@@ -120,7 +120,7 @@ public class IR_using_linear_combination_fifa_transfermarkt {
 		System.out.println("Height weight: 0.3");
 		System.out.println("Weight weight: 0.3");
 		// System.out.println("Rating weight: 0.2");
-		System.out.println("Fifa2017 <-> Transfermarkt");
+		System.out.println("Fifa17 <-> Transfermarkt");
 		System.out.println(String.format("Precision: %.4f\nRecall: %.4f\nF1: %.4f", perfTest.getPrecision(),
 				perfTest.getRecall(), perfTest.getF1()));
 		return perfTest.getF1();
