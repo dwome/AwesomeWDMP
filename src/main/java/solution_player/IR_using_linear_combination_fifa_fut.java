@@ -2,7 +2,7 @@ package solution_player;
 
 import java.io.File;
 
-import blocker.PlayerBlockingFunctionRating;
+import blocker.PlayerBlockingFunctionBirthdate;
 import comparators.PlayerHeightComparator;
 import comparators.PlayerNameComparatorJaccard;
 import comparators.PlayerBirthdateComparatorJaccard;
@@ -44,17 +44,17 @@ public class IR_using_linear_combination_fifa_fut {
 		LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.8);
 
 		// add comparators
-		matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.6);
-		matchingRule.addComparator(new PlayerBirthdateComparatorJaccard(), 0.7);
+		matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.3);
+		matchingRule.addComparator(new PlayerBirthdateComparatorJaccard(), 0.8);
 		//matchingRule.addComparator(new PlayerPositionComparatorJaccard(), 0.05);
 		matchingRule.addComparator(new PlayerHeightComparator(), 0.7);
-		matchingRule.addComparator(new PlayerRatingComparator(), 0.4);
+		//matchingRule.addComparator(new PlayerRatingComparator(), 0.2);
 
 		// create a blocker (blocking strategy)
 		NoBlocker<Player, Attribute> blocker = new NoBlocker<Player, Attribute>();
 
 		StandardRecordBlocker<Player, Attribute> blocker2 = new StandardRecordBlocker<Player, Attribute>(
-				new PlayerBlockingFunctionRating());
+				new PlayerBlockingFunctionBirthdate());
 		
 
 		// Initialize Matching Engine
@@ -85,11 +85,11 @@ public class IR_using_linear_combination_fifa_fut {
 				
 				// print the evaluation result
 				System.out.println("Fifa17 <-> Fut17");
-				System.out.println("Name weight: 0.5");
-				System.out.println("Birthdate weight: 0.7");
+				System.out.println("Name weight: 0.3");
+				System.out.println("Birthdate weight: 0.8");
 				//System.out.println("Position weight: 0.05");
 				System.out.println("Height weight: 0.7");
-				System.out.println("Rating weight: 0.4");
+				//System.out.println("Rating weight: 0.2");
 				System.out
 						.println(String.format(
 								"Precision: %.4f\nRecall: %.4f\nF1: %.4f",

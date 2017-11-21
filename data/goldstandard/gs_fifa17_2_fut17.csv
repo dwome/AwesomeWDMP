@@ -1,9 +1,9 @@
 fifa17_10441,fut17_9151,true
-fut17_4730,fifa17_10688,false
-fut17_6041,fifa17_4683,false
-fut17_8880,fifa17_10156,true
+fifa17_10688,fut17_4730,false
+fifa17_4683, fut17_6041,false
+fifa17_10156,fut17_8880,true
 fifa17_10160,fut17_8883,false
-fut17_354,fifa17_365,true
+fifa17_365, fut17_354, true
 fifa17_2538,fut17_10506,false
 fifa17_2538,fut17_12942,false
 fifa17_2538,fut17_13592,false
@@ -31,26 +31,24 @@ fifa17_3673,fut17_4486,false
 fifa17_7797,fut17_8654,false
 fifa17_7060,fut17_8654,false
 fifa17_602,fut17_2190,false
-fifa17_602,fut17_2190,true
 fifa17_2559,fut17_573,false
 fifa17_2559,fut17_2190,true
 fifa17_5939,fut17_4936,true
 fifa17_5939,fut17_14185,false
 fut17_12899,fifa17_3153,true
 fifa17_4694,fut17_1177,true
-fut17_10270,fifa17_12892,true
-fut17_10271,fifa17_12892,false
+fifa17_12892,fut17_10270,true
+fifa17_12892,fut17_10271,false
 fifa17_3847,fut17_3884,true
 fut17_3884,fifa17_6587,false
 fifa17_864,fut17_1874,true
 fifa17_864,fut17_1875,true
-fut17_3884,fifa17_3847,true
-fut17_4537,fifa17_4901,true
-fut17_4537,fifa17_4902,false
-fut17_574,fifa17_600,true
-fut17_6748,fifa17_600,false
-fut17_6748,fifa17_640,true
-fut17_574,fifa17_640,false
+fifa17_4901,fut17_4537,true
+fifa17_4902,fut17_4537,false
+fifa17_600,fut17_574,true
+fifa17_600,fut17_6748,false
+fifa17_640,fut17_6748,true
+fifa17_640,fut17_574,false
 fifa17_12084,fut17_215,true
 fut17_215,fifa17_7632,false
 fifa17_13678,fut17_9988,false
@@ -58,17 +56,16 @@ fifa17_13,fut17_87,true
 fifa17_13678,fut17_87,false
 fifa17_13,fut17_9988,false
 fifa17_3574,fut17_6289,false
-fut17_12045,fifa17_931,false
-fut17_77,fifa17_1,true
+fifa17_931,fut17_12045,false
+fifa17_1,fut17_77,true
 fifa17_4,fut17_8730,false
 fifa17_14017,fut17_12361,true
 fifa17_14243,fut17_11822,false
-fut17_5023,fifa17_8040,false
-fut17_507,fifa17_2869,false
-fut17_71,fifa17_3068,false
+fifa17_8040,fut17_5023,false
+fifa17_2869,fut17_507,false
+fifa17_3068,fut17_71,false
 fifa17_440, fut17_573, false
 fifa17_440, fut17_594, true
-fifa17_440, fut17_2190, false
 fifa17_440, fut17_2190, false
 fifa17_440, fut17_2522, false
 fifa17_440, fut17_3026, false
@@ -93,8 +90,8 @@ fifa17_322, fut17_10270, false
 fifa17_322, fut17_10271, false
 fifa17_322, fut17_10274, false
 fifa17_322, fut17_10947, false
-fut17_3844, fifa17_4930, true
-fut17_4720, fifa17_4930, false
+fifa17_4930, fut17_3844, true
+fifa17_4930, fut17_4720, false
 fifa17_15352, fut17_5477, false
 fifa17_15352, fut17_6186, false
 fifa17_15353, fut17_6951, false
