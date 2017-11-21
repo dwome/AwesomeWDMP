@@ -86,7 +86,7 @@ public class IR_using_linear_combination_fifa_fut {
 				// print the evaluation result
 				System.out.println("Fifa17 <-> Fut17");
 				System.out.println("Name weight: 0.5");
-				System.out.println("Birthdate weight: 2.0");
+				//System.out.println("Birthdate weight: 2.0");
 				//System.out.println("Position weight: 0.05");
 				System.out.println("Height weight: 0.7");
 				//System.out.println("Rating weight: 0.2");
