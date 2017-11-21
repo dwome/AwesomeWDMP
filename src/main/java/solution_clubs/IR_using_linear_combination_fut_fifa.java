@@ -2,6 +2,7 @@ package solution_clubs;
 
 import java.io.File;
 
+import comparators.ClubPlayersComparator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Club;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.ClubXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
@@ -29,10 +30,10 @@ public class IR_using_linear_combination_fut_fifa {
 				"/stadiums/stadium/clubs/club", dataFut17);
 
 		// create a matching rule 
-		LinearCombinationMatchingRule<Club, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0,0);
+		LinearCombinationMatchingRule<Club, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0,5);
 
 		// add comparators
-		matchingRule.addComparator(new ClubNameComparatorJaccard(), 1);
+		matchingRule.addComparator(new ClubPlayersComparator(), 1);
 
 		// create a blocker (blocking strategy)
 		NoBlocker<Club, Attribute> noblocker = new NoBlocker<Club, Attribute>();
@@ -43,7 +44,7 @@ public class IR_using_linear_combination_fut_fifa {
 		MatchingEngine<Club, Attribute> engine = new MatchingEngine<>();
 
 		// Execute the matching
-		Processable<Correspondence<Club, Attribute>> correspondences = engine.runIdentityResolution(dataFut17, dataFifa17, null, matchingRule,blocker2);
+		Processable<Correspondence<Club, Attribute>> correspondences = engine.runIdentityResolution(dataFut17, dataFifa17, null, matchingRule,noblocker);
 
 		// write the correspondences to the output file
 		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/fut17_2_fifa17_correspondences.csv"),

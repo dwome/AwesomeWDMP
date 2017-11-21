@@ -18,6 +18,7 @@ import java.time.temporal.ChronoField;
 import java.util.List;
 import java.util.Locale;
 
+import org.apache.jena.atlas.logging.Log;
 import org.w3c.dom.Node;
 
 import de.uni_mannheim.informatik.dws.winter.model.DataSet;
@@ -55,6 +56,7 @@ public class ClubXMLReader extends XMLMatchableReader<Club, Attribute>  {
 		List<Player> players = getObjectListFromChildElement(node, "players",
 				"player", new PlayerXMLReader(), provenanceInfo);
 		club.setPlayers(players);
+		//System.out.println(provenanceInfo+" "+club.getName()+" ...CLUB"+"Size " + players.size());
 
 		return club;
 	}
