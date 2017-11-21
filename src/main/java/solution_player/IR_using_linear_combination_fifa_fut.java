@@ -44,8 +44,8 @@ public class IR_using_linear_combination_fifa_fut {
 		LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.8);
 
 		// add comparators
-		matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.3);
-		matchingRule.addComparator(new PlayerBirthdateComparatorJaccard(), 0.8);
+		matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.5);
+		matchingRule.addComparator(new PlayerBirthdateComparatorJaccard(), 2.0);
 		//matchingRule.addComparator(new PlayerPositionComparatorJaccard(), 0.05);
 		matchingRule.addComparator(new PlayerHeightComparator(), 0.7);
 		//matchingRule.addComparator(new PlayerRatingComparator(), 0.2);
@@ -85,8 +85,8 @@ public class IR_using_linear_combination_fifa_fut {
 				
 				// print the evaluation result
 				System.out.println("Fifa17 <-> Fut17");
-				System.out.println("Name weight: 0.3");
-				System.out.println("Birthdate weight: 0.8");
+				System.out.println("Name weight: 0.5");
+				System.out.println("Birthdate weight: 2.0");
 				//System.out.println("Position weight: 0.05");
 				System.out.println("Height weight: 0.7");
 				//System.out.println("Rating weight: 0.2");
