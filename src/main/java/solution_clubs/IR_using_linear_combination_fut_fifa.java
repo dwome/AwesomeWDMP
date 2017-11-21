@@ -52,7 +52,7 @@ public class IR_using_linear_combination_fut_fifa {
 		// load the gold standard (test set)
 				MatchingGoldStandard gsTest = new MatchingGoldStandard();
 				gsTest.loadFromCSVFile(new File(
-						"data/goldstandard/gs_club_fifa17_2_fut17.csv"));
+						"data/goldstandard/gs_club_fut17_2_fifa17.csv"));
 
 				// evaluate your result
 				MatchingEvaluator<Club, Attribute> evaluator = new MatchingEvaluator<Club, Attribute>(true);
