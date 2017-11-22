@@ -30,7 +30,7 @@ public class IR_using_linear_combination_fut_fifa {
 				"/stadiums/stadium/clubs/club", dataFut17);
 
 		// create a matching rule 
-		LinearCombinationMatchingRule<Club, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0,5);
+		LinearCombinationMatchingRule<Club, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.7);
 
 		// add comparators
 		matchingRule.addComparator(new ClubPlayersComparator(), 1);

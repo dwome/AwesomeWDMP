@@ -16,6 +16,7 @@ public class ClubPlayersComparator  implements Comparator<Club, Attribute> {
 	
 	private static final long serialVersionUID = 1L;
 	private TokenizingJaccardSimilarity sim = new TokenizingJaccardSimilarity();
+	private int counter;
 
 
 	@Override
@@ -23,13 +24,21 @@ public class ClubPlayersComparator  implements Comparator<Club, Attribute> {
 			Club record1,
 			Club record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
+		
+		counter = 0;
+		
+		
 
 		for(Player r1 : record1.getPlayers()) {
 			for(Player r2: record2.getPlayers()) {
 				double similarity = sim.calculate(r1.getName().toLowerCase(), r2.getName().toLowerCase());
-				//System.out.println(similarity);
-				if(similarity>0.7)
-					return similarity;
+				
+				if(similarity==1.0){
+					counter ++;
+					if(counter>10)
+						return 1;
+				}
+					
 		
 			}
 		}
