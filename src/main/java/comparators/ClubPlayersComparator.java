@@ -1,21 +1,22 @@
- package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.solutions;
+package comparators;
 
 import java.util.HashSet;
 import java.util.Set;
 
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Actor;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Club;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.Comparator;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 import de.uni_mannheim.informatik.dws.winter.utils.query.Q;
 
-public class ClubPlayerComparator implements Comparator<Club, Attribute> {
+public class ClubPlayersComparator  implements Comparator<Club, Attribute> {
 	
 	private static final long serialVersionUID = 1L;
+	private TokenizingJaccardSimilarity sim = new TokenizingJaccardSimilarity();
+	private int counter;
 
 
 	@Override
@@ -24,19 +25,24 @@ public class ClubPlayerComparator implements Comparator<Club, Attribute> {
 			Club record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
 		
-		Set<String> players1 = new HashSet<>();
-		Set<String> players2 = new HashSet<>();
+		counter = 0;
 		
-		for(Player a : record1.getPlayers()) {
-			players1.add(a.getName());
-		}
-		for(Player a : record2.getPlayers()) {
-			players2.add(a.getName());
-		}
 		
-		double similarity = Q.intersection(players1, players2).size() / (double)Math.max(players1.size(), players2.size());
 
-		return similarity;
+		for(Player r1 : record1.getPlayers()) {
+			for(Player r2: record2.getPlayers()) {
+				double similarity = sim.calculate(r1.getName().toLowerCase(), r2.getName().toLowerCase());
+				
+				if(similarity==1.0){
+					counter ++;
+					if(counter>10)
+						return 1;
+				}
+					
+		
+			}
+		}
+		return 0;
 	}
 
 }
