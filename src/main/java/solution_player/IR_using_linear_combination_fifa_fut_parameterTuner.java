@@ -41,11 +41,11 @@ public class IR_using_linear_combination_fifa_fut_parameterTuner {
 		double bestR = 0.0;
 		double bestB = 0.0;
 		int count = 0;
-		for(double w = 0.1; w < 1.0; w+=0.1) {
-		for (double j = 0.1; j < 1.0; j += 0.1) {
-			for(double r = 0.1; r < 1.0; r += 0.1) {
-				for (double k = 0.1; k < 2.1; k += 0.1) {
-					for (double l = 0.1; l < 2.1; l += 0.2) {
+		for(double w = 0.1; w < 0.5; w+=0.1) {
+		for (double j = 0.1; j < 0.5; j += 0.1) {
+			for(double r = 0.1; r < 0.5; r += 0.1) {
+				for (double k = 0.1; k < 1; k += 0.1) {
+					for (double l = 0.1; l < 1; l += 0.1) {
 						count++;
 						System.out.println("COUNT:   " + count);
 						System.out.println("Weight: " + w);
@@ -84,7 +84,7 @@ public class IR_using_linear_combination_fifa_fut_parameterTuner {
 						"/stadiums/stadium/clubs/club/players/player", dataFifa17);
 
 				HashedDataSet<Player, Attribute> dataFut17 = new HashedDataSet<>();
-				new PlayerXMLReader().loadFromXML(new File("data/input/fut17.xml"),
+				new PlayerXMLReader().loadFromXML(new File("data/input/fut17_WD.xml"),
 						"/stadiums/stadium/clubs/club/players/player", dataFut17);
 
 				// create a matching rule

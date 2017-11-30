@@ -1,4 +1,4 @@
-package solution_clubs;
+package blocker;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Club;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.RecordBlockingKeyGenerator;
