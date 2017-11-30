@@ -1,0 +1,38 @@
+function pageFunction(context) {
+   // called on every page the crawler visits, use it to extract data from it
+   var $ = context.jQuery;
+   if (context.request.label === “player”) {
+       context.skipLinks();
+       var result = {};
+       $(‘.spielerdatenundfakten .auflistung tbody tr’).each(function(){
+           var key = $(this).find(‘th’).text().trim().replace(“:”, “”);
+           var value = $(this).find(‘td’).text().trim().replace(/\t/g, “”);
+           switch(key) {
+               case “Social media”:
+                   $(this).find(‘a’).each(function(index, item){
+                       var key1 = $(item).attr(‘title’);
+                       var value1 = $(item).attr(‘href’);
+                       if (key1 === “”) key1 = “Website”;
+                       result[key1] = value1;
+                   });
+                   break;
+               case “Nationality”:
+                   // player can have more nationalities
+                   var nationality = [];
+                   $(this).find(‘img’).each(function(index, item){
+                       nationality.push($(item).attr(‘title’));
+                   });
+                   result[key] = nationality;
+                   break;
+               default:
+                   result[key] = value;
+           }
+       });
+       result.Photo = “http:” + $(‘.dataBild img’).attr(‘src’);
+       result.Name = $(‘h1[itemprop=“name”]’).text();
+       result.Marktwert = $(‘div[class=“dataMarktwert”]’).text();
+       return result;
+   } else {
+       context.skipOutput();
+   }
+}

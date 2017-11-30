@@ -40,14 +40,14 @@ public class IR_using_machine_learning_fut_fifa {
 				"/stadiums/stadium/clubs/club", dataFifa17);
 
 		HashedDataSet<Club, Attribute> dataFut17 = new HashedDataSet<>();
-		new ClubXMLReader().loadFromXML(new File("data/input/fut17.xml"),
+		new ClubXMLReader().loadFromXML(new File("data/input/fut17_WD.xml"),
 				"/stadiums/stadium/clubs/club", dataFut17);
 
 		// create a matching rule
 		String options[] = new String[1];
 		options[0] = "";
 		String modelType = "SimpleLogistic"; // use a logistic regression
-		WekaMatchingRule<Club, Attribute> matchingRule = new WekaMatchingRule<>(0.6, modelType, options);
+		WekaMatchingRule<Club, Attribute> matchingRule = new WekaMatchingRule<>(0.8, modelType, options);
 		// add comparators
 		matchingRule.addComparator(new ClubPlayersComparator());
 
@@ -72,7 +72,7 @@ public class IR_using_machine_learning_fut_fifa {
 				dataFifa17, null, matchingRule, blocker);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/ML_club_fut17_2_fifa17_correspondences.csv"),
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/FINAL_club_fut17_2_fifa17_correspondences.csv"),
 				correspondences);
 
 		// load the gold standard (test set)

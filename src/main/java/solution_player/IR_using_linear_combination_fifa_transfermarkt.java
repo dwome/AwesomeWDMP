@@ -57,7 +57,7 @@ public class IR_using_linear_combination_fifa_transfermarkt {
 						dataTrans, null, matchingRule, blocker2);
 
 				// write the correspondences to the output file
-				new CSVCorrespondenceFormatter().writeCSV(new File("data/output/fifa17_2_trans_correspondences.csv"),
+				new CSVCorrespondenceFormatter().writeCSV(new File("data/output/FINAL_fifa17_2_trans_correspondences.csv"),
 						correspondences);
 
 				// load the gold standard (test set)

@@ -41,7 +41,7 @@ public class IR_using_linear_combination_stadium_fifa {
 				dataStadium);
 
 		// create a matching rule
-		LinearCombinationMatchingRule<Club, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0);
+		LinearCombinationMatchingRule<Club, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.8);
 
 		// add comparators
 		matchingRule.addComparator(new ClubNameComparatorJaccardNGrams(), 1.0);
@@ -59,7 +59,7 @@ public class IR_using_linear_combination_stadium_fifa {
 				dataFifa17, null, matchingRule, noblocker);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/stadium_2_fifa17_correspondences.csv"),
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/club_stadium_2_fifa17_correspondences.csv"),
 				correspondences);
 
 		// load the gold standard (test set)

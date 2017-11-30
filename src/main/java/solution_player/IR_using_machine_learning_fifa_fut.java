@@ -73,7 +73,7 @@ public class IR_using_machine_learning_fifa_fut {
 				datafut17, null, matchingRule, blocker2);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/ML_fifa17_2_fut17_correspondences.csv"),
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/FINAL_fifa17_2_fut17_correspondences.csv"),
 				correspondences);
 
 		// load the gold standard (test set)
