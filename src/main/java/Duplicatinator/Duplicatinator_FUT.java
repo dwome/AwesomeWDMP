@@ -38,31 +38,30 @@ public class Duplicatinator_FUT {
 		List<Player> playernames = new ArrayList<Player>();
 		List<String> playernamesString = new ArrayList<String>();
 		List<String> duplicates = new ArrayList<String>();
+		List<String> duplicateIDs = new ArrayList<String>();
+
 		int count = 0;
 
 		for (Player player : fifa17list) {
-			if(playernamesString.contains(player.getName())){
-			for(Player addedPlayer: playernames){
-				if(addedPlayer.getName().equals(player.getName())){
-					if(player.getBirthdate().equals(addedPlayer.getBirthdate()))
-					{
-						count++;
-						System.out.println("Player who is in the list: "+player.getName());
-						System.out.println("ID1 "+player.getId());
-						System.out.println("ID2 "+addedPlayer.getId());
-						
+			if (playernamesString.contains(player.getName())) {
+				for (Player addedPlayer : playernames) {
+					if (addedPlayer.getName().equals(player.getName())) {
+						if (player.getBirthdate().equals(addedPlayer.getBirthdate())) {
+							//Really duplicate
+							count++;
+							duplicateIDs.add(player.getId());
+						}
 					}
-			}
-			}
-			}
-			 else {
-				 playernames.add(player);
-				 playernamesString.add(player.getName());
+				}
+			} else {
+				playernames.add(player);
+				playernamesString.add(player.getName());
 
 			}
 
 		}
 		
+		DuplicatesWorstEnemy.punishDataset(duplicateIDs);
 		System.out.println("Duplicates: " + count);
 
 	}
