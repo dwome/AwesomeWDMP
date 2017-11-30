@@ -12,10 +12,6 @@ import comparators.PlayerNationalityComparator;
 import comparators.PlayerPositionComparatorJaccard;
 import comparators.PlayerRatingComparator;
 import comparators.PlayerWeightComparator;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Club;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.ClubXMLReader;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.PlayerXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
 import de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleLearner;
@@ -29,6 +25,10 @@ import de.uni_mannheim.informatik.dws.winter.model.Performance;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
+import model.Club;
+import model.ClubXMLReader;
+import model.Player;
+import model.PlayerXMLReader;
 
 public class IR_using_machine_learning_fut_fifa {
 
@@ -39,7 +39,7 @@ public class IR_using_machine_learning_fut_fifa {
 				"/stadiums/stadium/clubs/club", dataFifa17);
 
 		HashedDataSet<Club, Attribute> dataFut17 = new HashedDataSet<>();
-		new ClubXMLReader().loadFromXML(new File("data/input/fut17.xml"),
+		new ClubXMLReader().loadFromXML(new File("data/input/fut17_WD.xml"),
 				"/stadiums/stadium/clubs/club", dataFut17);
 
 		// create a matching rule
