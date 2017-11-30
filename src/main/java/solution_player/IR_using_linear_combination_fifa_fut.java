@@ -44,7 +44,7 @@ public class IR_using_linear_combination_fifa_fut {
 		// add comparators
 		matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.7);
 		matchingRule.addComparator(new PlayerBirthdateComparatorJaccard(), 2.1);
-		matchingRule.addComparator(new PlayerHeightComparator(), 0.6);
+		matchingRule.addComparator(new PlayerHeightComparator(), 0.5);
 		matchingRule.addComparator(new PlayerWeightComparator(), 0.1);
 		matchingRule.addComparator(new PlayerRatingComparator(), 0.2);
 

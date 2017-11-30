@@ -34,9 +34,9 @@ public class IR_using_linear_combination_fut_transfermarkt_parameterTuner {
 		double bestH = 0.0;
 		double bestB = 0.0;
 		int count = 0;
-		for (double j = 0.1; j < 2; j += 0.1) {
-			for (double k = 0.1; k < 2; k += 0.1) {
-				for (double l = 0.1; l < 2; l += 0.1) {
+		for (double j = 0.1; j < 0.5; j += 0.1) {
+			for (double k = 0.1; k < 1; k += 0.1) {
+				for (double l = 0.1; l < 1; l += 0.1) {
 					count++;
 					System.out.println("COUNT:   " + count);
 					System.out.println("Name: " + l);
@@ -50,17 +50,8 @@ public class IR_using_linear_combination_fut_transfermarkt_parameterTuner {
 						bestN = l;
 						bestH = j;
 						bestB = k;
-						if (tempscore == 1.0) {
-							break;
-						}
 					}
 				}
-				if (score == 1.0) {
-					break;
-				}
-			}
-			if(score == 1.0) {
-				break;
 			}
 		}
 		System.out.println("-----PARAMETER------");
@@ -78,12 +69,12 @@ public class IR_using_linear_combination_fut_transfermarkt_parameterTuner {
 				"/stadiums/stadium/clubs/club/players/player", dataTrans);
 
 		HashedDataSet<Player, Attribute> dataFut17 = new HashedDataSet<>();
-		new PlayerXMLReader().loadFromXML(new File("data/input/fut17.xml"),
+		new PlayerXMLReader().loadFromXML(new File("data/input/fut17_WD.xml"),
 				"/stadiums/stadium/clubs/club/players/player", dataFut17);
 
 		// create a matching rule
 
-		LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.8);
+		LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.5);
 
 
 		// add comparators

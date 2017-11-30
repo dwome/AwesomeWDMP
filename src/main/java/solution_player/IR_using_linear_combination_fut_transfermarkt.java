@@ -40,12 +40,12 @@ public class IR_using_linear_combination_fut_transfermarkt {
 						"/stadiums/stadium/clubs/club/players/player", dataFut17);
 
 				// create a matching rule
-				LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.9);
+				LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.5);
 
 				// add comparators
-				matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.5);
-				matchingRule.addComparator(new PlayerHeightComparator(), 0.5);
-				matchingRule.addComparator(new PlayerBirthdateComparatorJaccard(), 0.5);
+				matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.6);
+				matchingRule.addComparator(new PlayerHeightComparator(), 0.4);
+				matchingRule.addComparator(new PlayerBirthdateComparatorJaccard(), 0.99);
 
 				StandardRecordBlocker<Player, Attribute> blocker2 = new StandardRecordBlocker<Player, Attribute>(
 						new PlayerBlockingFunctionBirthdate());

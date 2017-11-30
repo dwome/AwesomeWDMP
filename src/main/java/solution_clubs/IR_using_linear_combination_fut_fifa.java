@@ -2,6 +2,7 @@ package solution_clubs;
 
 import java.io.File;
 
+import blocker.ClubBlockingFunction;
 import comparators.ClubPlayersComparator;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
@@ -26,7 +27,7 @@ public class IR_using_linear_combination_fut_fifa {
 				"/stadiums/stadium/clubs/club", dataFifa17);
 
 		HashedDataSet<Club, Attribute> dataFut17 = new HashedDataSet<>();
-		new ClubXMLReader().loadFromXML(new File("data/input/fut17.xml"),
+		new ClubXMLReader().loadFromXML(new File("data/input/fut17_WD.xml"),
 				"/stadiums/stadium/clubs/club", dataFut17);
 
 		// create a matching rule 

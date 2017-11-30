@@ -1,4 +1,4 @@
-package solution_clubs;
+package blocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.generators.RecordBlockingKeyGenerator;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
@@ -7,7 +7,6 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.DataIterator;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import model.Club;
-import model.Player;
 
 public class ClubBlockingFunction extends
 			RecordBlockingKeyGenerator<Club, Attribute> {

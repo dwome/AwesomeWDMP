@@ -81,7 +81,7 @@ public class IR_using_machine_learning_fut_transfermarkt {
 		Performance perfTest = evaluator.evaluateMatching(correspondences.get(), gsTest);
 
 		// print the evaluation result
-		System.out.println("FUT17 <-> TRANS");
+		System.out.println("FUT17 <-> Trans");
 		System.out.println(String.format("Precision: %.4f\nRecall: %.4f\nF1: %.4f", perfTest.getPrecision(),
 				perfTest.getRecall(), perfTest.getF1()));
 

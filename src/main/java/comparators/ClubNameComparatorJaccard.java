@@ -1,4 +1,4 @@
-package solution_clubs;
+package comparators;
 
 
 import de.uni_mannheim.informatik.dws.winter.matching.rules.Comparator;
