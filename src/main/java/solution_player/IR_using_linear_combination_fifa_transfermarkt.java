@@ -36,7 +36,7 @@ public class IR_using_linear_combination_fifa_transfermarkt {
 						"/stadiums/stadium/clubs/club/players/player", dataFifa17);
 
 				// create a matching rule
-				LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.9);
+				LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.5);
 
 				// add comparators
 				matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.5);

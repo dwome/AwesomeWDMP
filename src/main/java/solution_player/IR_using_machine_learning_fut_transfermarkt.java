@@ -27,13 +27,13 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
-public class IR_using_machine_learning_fifa_fut {
+public class IR_using_machine_learning_fut_transfermarkt {
 
 	public static void main(String[] args) throws Exception {
 		// loading data
-		HashedDataSet<Player, Attribute> datafifa17 = new HashedDataSet<>();
-		new PlayerXMLReader().loadFromXML(new File("data/input/fifa17.xml"),
-				"/stadiums/stadium/clubs/club/players/player", datafifa17);
+		HashedDataSet<Player, Attribute> datatransfermarkt = new HashedDataSet<>();
+		new PlayerXMLReader().loadFromXML(new File("data/input/transfermarkt.xml"),
+				"/stadiums/stadium/clubs/club/players/player", datatransfermarkt);
 		HashedDataSet<Player, Attribute> datafut17 = new HashedDataSet<>();
 		new PlayerXMLReader().loadFromXML(new File("data/input/fut17_WD.xml"),
 				"/stadiums/stadium/clubs/club/players/player", datafut17);
@@ -46,19 +46,15 @@ public class IR_using_machine_learning_fifa_fut {
 		// add comparators
 		matchingRule.addComparator(new PlayerNameComparatorJaccard());
 		matchingRule.addComparator(new PlayerBirthdateComparatorJaccard());
-		matchingRule.addComparator(new PlayerPositionComparatorJaccard());
 		matchingRule.addComparator(new PlayerHeightComparator());
-		matchingRule.addComparator(new PlayerRatingComparator());
-		matchingRule.addComparator(new PlayerWeightComparator());
-		matchingRule.addComparator(new PlayerNationalityComparator());
 
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
-		gsTraining.loadFromCSVFile(new File("data/goldstandard/gs_fifa17_2_fut17_v1.csv"));
+		gsTraining.loadFromCSVFile(new File("data/goldstandard/gs_fut17_2_trans_v1.csv"));
 
 		// train the matching rule's model
 		RuleLearner<Player, Attribute> learner = new RuleLearner<>();
-		learner.learnMatchingRule(datafifa17, datafut17, null, matchingRule, gsTraining);
+		learner.learnMatchingRule(datatransfermarkt, datafut17, null, matchingRule, gsTraining);
 
 		// create a blocker (blocking strategy)
 		NoBlocker<Player, Attribute> blocker = new NoBlocker<Player, Attribute>();
@@ -69,23 +65,23 @@ public class IR_using_machine_learning_fifa_fut {
 		MatchingEngine<Player, Attribute> engine = new MatchingEngine<>();
 
 		// Execute the matching
-		Processable<Correspondence<Player, Attribute>> correspondences = engine.runIdentityResolution(datafifa17,
+		Processable<Correspondence<Player, Attribute>> correspondences = engine.runIdentityResolution(datatransfermarkt,
 				datafut17, null, matchingRule, blocker2);
 
 		// write the correspondences to the output file
-		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/ML_fifa17_2_fut17_correspondences.csv"),
+		new CSVCorrespondenceFormatter().writeCSV(new File("data/output/ML_fut17_2_trans_correspondences.csv"),
 				correspondences);
 
 		// load the gold standard (test set)
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
-		gsTest.loadFromCSVFile(new File("data/goldstandard/gs_fifa17_2_fut17_v2.csv"));
+		gsTest.loadFromCSVFile(new File("data/goldstandard/gs_fut17_2_trans_v2.csv"));
 
 		// evaluate your result
 		MatchingEvaluator<Player, Attribute> evaluator = new MatchingEvaluator<Player, Attribute>(true);
 		Performance perfTest = evaluator.evaluateMatching(correspondences.get(), gsTest);
 
 		// print the evaluation result
-		System.out.println("FIFA17 <-> FUT17");
+		System.out.println("FUT17 <-> TRANS");
 		System.out.println(String.format("Precision: %.4f\nRecall: %.4f\nF1: %.4f", perfTest.getPrecision(),
 				perfTest.getRecall(), perfTest.getF1()));
 
