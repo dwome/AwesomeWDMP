@@ -4,8 +4,6 @@ import java.io.File;
 
 import blocker.ClubBlockingFunction;
 import comparators.ClubPlayersComparator;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Club;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.ClubXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.NoBlocker;
@@ -18,6 +16,8 @@ import de.uni_mannheim.informatik.dws.winter.model.Performance;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
+import model.Club;
+import model.ClubXMLReader;
 
 public class IR_using_linear_combination_fut_fifa {
 	public static void main(String[] args) throws Exception {

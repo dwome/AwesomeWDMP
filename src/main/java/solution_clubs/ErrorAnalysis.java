@@ -4,16 +4,14 @@ package solution_clubs;
 import java.util.HashSet;
 import java.util.Set;
 
-
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Club;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.DataSet;
 import de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard;
 import de.uni_mannheim.informatik.dws.winter.model.Pair;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
+import model.Club;
+import model.Player;
 
 public class ErrorAnalysis {
 	

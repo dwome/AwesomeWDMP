@@ -12,8 +12,6 @@ import blocker.PlayerBlockingFunctionBirthdate;
 import comparators.PlayerBirthdateComparatorJaccard;
 import comparators.PlayerHeightComparator;
 import comparators.PlayerNameComparatorJaccard;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Player;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.PlayerXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.NoBlocker;
@@ -26,6 +24,8 @@ import de.uni_mannheim.informatik.dws.winter.model.Performance;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
+import model.Player;
+import model.PlayerXMLReader;
 
 public class IR_using_linear_combination_fut_transfermarkt {
 	public static void main(String[] args) throws Exception {
