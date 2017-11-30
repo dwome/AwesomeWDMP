@@ -54,7 +54,7 @@ public class IR_using_machine_learning_fifa_fut {
 
 		// load the training set
 		MatchingGoldStandard gsTraining = new MatchingGoldStandard();
-		gsTraining.loadFromCSVFile(new File("data/goldstandard/gs_fifa17_2_fut17_v1.csv"));
+		gsTraining.loadFromCSVFile(new File("data/goldstandard/gs_fifa17_2_fut17_v2.csv"));
 
 		// train the matching rule's model
 		RuleLearner<Player, Attribute> learner = new RuleLearner<>();
@@ -78,7 +78,7 @@ public class IR_using_machine_learning_fifa_fut {
 
 		// load the gold standard (test set)
 		MatchingGoldStandard gsTest = new MatchingGoldStandard();
-		gsTest.loadFromCSVFile(new File("data/goldstandard/gs_fifa17_2_fut17_v2.csv"));
+		gsTest.loadFromCSVFile(new File("data/goldstandard/gs_fifa17_2_fut17_v1.csv"));
 
 		// evaluate your result
 		MatchingEvaluator<Player, Attribute> evaluator = new MatchingEvaluator<Player, Attribute>(true);
