@@ -40,11 +40,8 @@ public class IR_using_linear_combination_fifa_transfermarkt {
 
 				// add comparators
 				matchingRule.addComparator(new PlayerNameComparatorJaccard(), 1.1);
-				// matchingRule.addComparator(new PlayerAgeComparatorFifa2Trans(), 0.2);
 				matchingRule.addComparator(new PlayerBirthdateComparatorJaccard(), 1.1);
-//				matchingRule.addComparator(new PlayerWeightComparator(), weight);
 				matchingRule.addComparator(new PlayerHeightComparator(), 0.6);
-				// matchingRule.addComparator(new PlayerRatingComparator(), 0.2);
 
 				// create a blocker (blocking strategy)
 				NoBlocker<Player, Attribute> blocker = new NoBlocker<Player, Attribute>();
@@ -77,13 +74,6 @@ public class IR_using_linear_combination_fifa_transfermarkt {
 
 				// print the evaluation result
 
-				System.out.println("Name weight: 0.8");
-				System.out.println("Birthdate weight: 2.0");
-				// System.out.println("Age weight: 0.2");
-				// System.out.println("Position weight: 0.5");
-				System.out.println("Height weight: 0.3");
-				System.out.println("Weight weight: 0.3");
-				// System.out.println("Rating weight: 0.2");
 				System.out.println("Fifa17 <-> Transfermarkt");
 				System.out.println(String.format("Precision: %.4f\nRecall: %.4f\nF1: %.4f", perfTest.getPrecision(),
 						perfTest.getRecall(), perfTest.getF1()));
