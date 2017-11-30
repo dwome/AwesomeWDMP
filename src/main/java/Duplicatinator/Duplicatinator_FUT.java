@@ -31,7 +31,7 @@ public class Duplicatinator_FUT {
 	public static void main(String[] args) throws Exception {
 		// Load the Data into FusibleDataSet
 		HashedDataSet<Player, Attribute> dataFifa17 = new HashedDataSet<>();
-		new PlayerXMLReader().loadFromXML(new File("data/input/fut17.xml"),
+		new PlayerXMLReader().loadFromXML(new File("data/input/fut17_WD.xml"),
 				"/stadiums/stadium/clubs/club/players/player", dataFifa17);
 
 		List<Player> fifa17list = new ArrayList<Player>(dataFifa17.get());
@@ -61,7 +61,7 @@ public class Duplicatinator_FUT {
 
 		}
 		
-		DuplicatesWorstEnemy.punishDataset(duplicateIDs);
+		//DuplicatesWorstEnemy.punishDataset(duplicateIDs);
 		System.out.println("Duplicates: " + count);
 
 	}

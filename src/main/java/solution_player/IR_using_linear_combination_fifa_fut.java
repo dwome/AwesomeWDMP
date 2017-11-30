@@ -41,7 +41,7 @@ public class IR_using_linear_combination_fifa_fut {
 				"/stadiums/stadium/clubs/club/players/player", dataFifa17);
 
 		HashedDataSet<Player, Attribute> dataFut17 = new HashedDataSet<>();
-		new PlayerXMLReader().loadFromXML(new File("data/input/fut17.xml"),
+		new PlayerXMLReader().loadFromXML(new File("data/input/fut17_WD.xml"),
 				"/stadiums/stadium/clubs/club/players/player", dataFut17);
 
 		// create a matching rule
