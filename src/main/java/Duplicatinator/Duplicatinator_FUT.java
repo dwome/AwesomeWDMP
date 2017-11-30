@@ -31,7 +31,7 @@ public class Duplicatinator_FUT {
 	public static void main(String[] args) throws Exception {
 		// Load the Data into FusibleDataSet
 		HashedDataSet<Player, Attribute> dataFifa17 = new HashedDataSet<>();
-		new PlayerXMLReader().loadFromXML(new File("data/input/fut17_WD.xml"),
+		new PlayerXMLReader().loadFromXML(new File("data/input/fut17.xml"),
 				"/stadiums/stadium/clubs/club/players/player", dataFifa17);
 
 		List<Player> fifa17list = new ArrayList<Player>(dataFifa17.get());
@@ -49,6 +49,7 @@ public class Duplicatinator_FUT {
 						if (player.getBirthdate().equals(addedPlayer.getBirthdate())) {
 							//Really duplicate
 							count++;
+							System.out.println(player.getId());
 							duplicateIDs.add(player.getId());
 						}
 					}

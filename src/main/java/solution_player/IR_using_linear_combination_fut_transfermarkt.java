@@ -43,9 +43,9 @@ public class IR_using_linear_combination_fut_transfermarkt {
 				LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.9);
 
 				// add comparators
-				matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.6);
-				matchingRule.addComparator(new PlayerHeightComparator(), 0.2);
-				matchingRule.addComparator(new PlayerBirthdateComparatorJaccard(), 0.79);
+				matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.5);
+				matchingRule.addComparator(new PlayerHeightComparator(), 0.5);
+				matchingRule.addComparator(new PlayerBirthdateComparatorJaccard(), 0.5);
 
 				StandardRecordBlocker<Player, Attribute> blocker2 = new StandardRecordBlocker<Player, Attribute>(
 						new PlayerBlockingFunctionBirthdate());

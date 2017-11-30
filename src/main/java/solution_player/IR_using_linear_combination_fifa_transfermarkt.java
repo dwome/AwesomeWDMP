@@ -36,12 +36,12 @@ public class IR_using_linear_combination_fifa_transfermarkt {
 						"/stadiums/stadium/clubs/club/players/player", dataFifa17);
 
 				// create a matching rule
-				LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.6);
+				LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.9);
 
 				// add comparators
-				matchingRule.addComparator(new PlayerNameComparatorJaccard(), 1.1);
-				matchingRule.addComparator(new PlayerBirthdateComparatorJaccard(), 1.1);
-				matchingRule.addComparator(new PlayerHeightComparator(), 0.6);
+				matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.5);
+				matchingRule.addComparator(new PlayerBirthdateComparatorJaccard(), 0.5);
+				matchingRule.addComparator(new PlayerHeightComparator(), 0.5);
 
 				// create a blocker (blocking strategy)
 				NoBlocker<Player, Attribute> blocker = new NoBlocker<Player, Attribute>();
