@@ -74,7 +74,7 @@ public class IR_using_linear_combination_fut_transfermarkt_parameterTuner {
 				"/stadiums/stadium/clubs/club/players/player", dataFut17);
 
 		// create a matching rule
-		LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.6);
+		LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.8);
 
 		// add comparators
 		matchingRule.addComparator(new PlayerNameComparatorJaccard(), name);
