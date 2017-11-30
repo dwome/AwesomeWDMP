@@ -2,6 +2,7 @@ package solution_clubs;
 
 import java.io.File;
 
+import blocker.ClubBlockingFunction;
 import comparators.ClubPlayersComparator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Club;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.ClubXMLReader;

@@ -2,6 +2,7 @@ package solution_clubs;
 
 import java.io.File;
 
+import blocker.ClubBlockingFunction;
 import blocker.PlayerAgeFunctionRating;
 import blocker.PlayerBlockingFunctionBirthdate;
 import comparators.ClubNameComparatorJaccardNGrams;

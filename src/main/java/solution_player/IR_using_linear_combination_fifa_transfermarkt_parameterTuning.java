@@ -31,23 +31,23 @@ public class IR_using_linear_combination_fifa_transfermarkt_parameterTuning {
 		double bestH = 0.0;
 		double bestB = 0.0;
 		int count = 0;
-		for (double j = 0.1; j < 2; j += 0.1) {
-				for (double k = 0.1; k < 2; k += 0.1) {
-					for (double l = 0.1; l < 2; l += 0.1) {
-						count++;
-						System.out.println("COUNT:   " + count);
-						System.out.println("Name: " + l);
-						System.out.println("Height: " + j);
-						System.out.println("Birthdate: " + k);
-						System.out.println("---------------------------------------------" + score
-								+ "---------------------------------------------");
-						double tempscore = parameterTuner(l, j, k);
-						if (tempscore >= score) {
-							score = tempscore;
-							bestN = l;
-							bestH = j;
-							bestB = k;
-						}
+		for (double j = 0.1; j < 0.5; j += 0.1) {
+			for (double k = 0.1; k < 1; k += 0.1) {
+				for (double l = 0.1; l < 1; l += 0.1) {
+					count++;
+					System.out.println("COUNT:   " + count);
+					System.out.println("Name: " + l);
+					System.out.println("Height: " + j);
+					System.out.println("Birthdate: " + k);
+					System.out.println("---------------------------------------------" + score
+							+ "---------------------------------------------");
+					double tempscore = parameterTuner(l, j, k);
+					if (tempscore >= score) {
+						score = tempscore;
+						bestN = l;
+						bestH = j;
+						bestB = k;
+					}
 				}
 			}
 		}
@@ -110,13 +110,6 @@ public class IR_using_linear_combination_fifa_transfermarkt_parameterTuning {
 
 		// print the evaluation result
 
-		System.out.println("Name weight: 0.8");
-		System.out.println("Birthdate weight: 2.0");
-		// System.out.println("Age weight: 0.2");
-		// System.out.println("Position weight: 0.5");
-		System.out.println("Height weight: 0.3");
-		System.out.println("Weight weight: 0.3");
-		// System.out.println("Rating weight: 0.2");
 		System.out.println("Fifa17 <-> Transfermarkt");
 		System.out.println(String.format("Precision: %.4f\nRecall: %.4f\nF1: %.4f", perfTest.getPrecision(),
 				perfTest.getRecall(), perfTest.getF1()));

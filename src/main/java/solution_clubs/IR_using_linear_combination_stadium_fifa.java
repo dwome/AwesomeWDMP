@@ -2,6 +2,7 @@ package solution_clubs;
 
 import java.io.File;
 
+import blocker.ClubBlockingFunction;
 import comparators.ClubNameComparatorJaccardNGrams;
 import comparators.PlayerHeightComparator;
 import comparators.PlayerNameComparatorJaccard;
