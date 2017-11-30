@@ -9,6 +9,7 @@ import comparators.PlayerNameComparatorJaccard;
 import comparators.PlayerBirthdateComparatorJaccard;
 import comparators.PlayerPositionComparatorJaccard;
 import comparators.PlayerRatingComparator;
+import comparators.PlayerWeightComparator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByDecadeGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDateComparator10Years;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorLevenshtein;
@@ -36,36 +37,47 @@ public class IR_using_linear_combination_fifa_fut_parameterTuner {
 		double score = 0.0;
 		double bestN = 0.0;
 		double bestH = 0.0;
+		double bestW = 0.0;
+		double bestR = 0.0;
 		double bestB = 0.0;
 		int count = 0;
-		for (double j = 0.2; j < 0.5; j += 0.1) {
-				for (double k = 1; k < 1.1; k += 0.1) {
-					for (double l = 0.5; l < 1.5; l += 0.1) {
+		for(double w = 0.1; w < 1.0; w+=0.1) {
+		for (double j = 0.1; j < 1.0; j += 0.1) {
+			for(double r = 0.1; r < 1.0; r += 0.1) {
+				for (double k = 0.1; k < 2.1; k += 0.1) {
+					for (double l = 0.1; l < 2.1; l += 0.2) {
 						count++;
 						System.out.println("COUNT:   " + count);
+						System.out.println("Weight: " + w);
 						System.out.println("Name: " + l);
 						System.out.println("Height: " + j);
+						System.out.println("Rating: " + r);
 						System.out.println("Birthdate: " + k);
 						System.out.println("---------------------------------------------" + score
 								+ "---------------------------------------------");
-						double tempscore = parameterTuner(l, j, k);
+						double tempscore = parameterTuner(l, j, k, w, r);
 						if (tempscore >= score) {
 							score = tempscore;
 							bestN = l;
+							bestW = w;
 							bestH = j;
 							bestB = k;
+							bestR = r;
 						}
-				}
+				}}}
+				
 			}
 		}
 		System.out.println("-----PARAMETER------");
 		System.out.println("Name: " + bestN);
 		System.out.println("Height: " + bestH);
 		System.out.println("Birthdate: " + bestB);
+		System.out.println("Weight: " + bestW);
+		System.out.println("Rating: " + bestR);
 		System.out.println("F1: " + score);
 	}
 	
-	public static double parameterTuner(double name, double height, double bd) throws Exception {
+	public static double parameterTuner(double name, double height, double bd, double weight, double rating) throws Exception {
 		// loading data
 				HashedDataSet<Player, Attribute> dataFifa17 = new HashedDataSet<>();
 				new PlayerXMLReader().loadFromXML(new File("data/input/fifa17.xml"),
@@ -81,9 +93,9 @@ public class IR_using_linear_combination_fifa_fut_parameterTuner {
 				// add comparators
 				matchingRule.addComparator(new PlayerNameComparatorJaccard(), name);
 				matchingRule.addComparator(new PlayerBirthdateComparatorJaccard(), height);
-				//matchingRule.addComparator(new PlayerPositionComparatorJaccard(), 0.05);
+				matchingRule.addComparator(new PlayerWeightComparator(), weight);
 				matchingRule.addComparator(new PlayerHeightComparator(), bd);
-				//matchingRule.addComparator(new PlayerRatingComparator(), 0.2);
+				matchingRule.addComparator(new PlayerRatingComparator(), rating);
 
 				// create a blocker (blocking strategy)
 				NoBlocker<Player, Attribute> blocker = new NoBlocker<Player, Attribute>();

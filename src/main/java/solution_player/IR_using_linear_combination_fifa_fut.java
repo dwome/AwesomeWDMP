@@ -8,8 +8,10 @@ import comparators.PlayerNameComparatorJaccard;
 import comparators.PlayerBirthdateComparatorJaccard;
 import comparators.PlayerPositionComparatorJaccard;
 import comparators.PlayerRatingComparator;
+import comparators.PlayerWeightComparator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.MovieBlockingKeyByDecadeGenerator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDateComparator10Years;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieDirectorComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.MovieTitleComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Movie;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.MovieXMLReader;
@@ -17,10 +19,12 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Playe
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.PlayerXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
+import de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleLearner;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.NoBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.SortedNeighbourhoodBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.LinearCombinationMatchingRule;
+import de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.HashedDataSet;
 import de.uni_mannheim.informatik.dws.winter.model.MatchingGoldStandard;
@@ -44,11 +48,11 @@ public class IR_using_linear_combination_fifa_fut {
 		LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.8);
 
 		// add comparators
-		matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.5);
-		matchingRule.addComparator(new PlayerBirthdateComparatorJaccard(), 2.0);
-		//matchingRule.addComparator(new PlayerPositionComparatorJaccard(), 0.05);
-		matchingRule.addComparator(new PlayerHeightComparator(), 0.7);
-		//matchingRule.addComparator(new PlayerRatingComparator(), 0.2);
+		matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.7);
+		matchingRule.addComparator(new PlayerBirthdateComparatorJaccard(), 2.1);
+		matchingRule.addComparator(new PlayerHeightComparator(), 0.6);
+		matchingRule.addComparator(new PlayerWeightComparator(), 0.1);
+		matchingRule.addComparator(new PlayerRatingComparator(), 0.2);
 
 		// create a blocker (blocking strategy)
 		NoBlocker<Player, Attribute> blocker = new NoBlocker<Player, Attribute>();
@@ -85,18 +89,11 @@ public class IR_using_linear_combination_fifa_fut {
 				
 				// print the evaluation result
 				System.out.println("Fifa17 <-> Fut17");
-				System.out.println("Name weight: 0.5");
-				//System.out.println("Birthdate weight: 2.0");
-				//System.out.println("Position weight: 0.05");
-				System.out.println("Height weight: 0.7");
-				//System.out.println("Rating weight: 0.2");
 				System.out
 						.println(String.format(
 								"Precision: %.4f\nRecall: %.4f\nF1: %.4f",
 								perfTest.getPrecision(), perfTest.getRecall(),
 								perfTest.getF1()));
-		
-
 		
 	}
 }

@@ -34,24 +34,33 @@ public class IR_using_linear_combination_fut_transfermarkt_parameterTuner {
 		double bestH = 0.0;
 		double bestB = 0.0;
 		int count = 0;
-		for (double j = 0.2; j < 0.5; j += 0.1) {
-				for (double k = 1; k < 1.1; k += 0.1) {
-					for (double l = 0.5; l < 1.5; l += 0.1) {
-						count++;
-						System.out.println("COUNT:   " + count);
-						System.out.println("Name: " + l);
-						System.out.println("Height: " + j);
-						System.out.println("Birthdate: " + k);
-						System.out.println("---------------------------------------------" + score
-								+ "---------------------------------------------");
-						double tempscore = parameterTuner(l, j, k);
-						if (tempscore >= score) {
-							score = tempscore;
-							bestN = l;
-							bestH = j;
-							bestB = k;
+		for (double j = 0.1; j < 2; j += 0.1) {
+			for (double k = 0.1; k < 2; k += 0.1) {
+				for (double l = 0.1; l < 2; l += 0.1) {
+					count++;
+					System.out.println("COUNT:   " + count);
+					System.out.println("Name: " + l);
+					System.out.println("Height: " + j);
+					System.out.println("Birthdate: " + k);
+					System.out.println("---------------------------------------------" + score
+							+ "---------------------------------------------");
+					double tempscore = parameterTuner(l, j, k);
+					if (tempscore >= score) {
+						score = tempscore;
+						bestN = l;
+						bestH = j;
+						bestB = k;
+						if (tempscore == 1.0) {
+							break;
 						}
+					}
 				}
+				if (score == 1.0) {
+					break;
+				}
+			}
+			if(score == 1.0) {
+				break;
 			}
 		}
 		System.out.println("-----PARAMETER------");
@@ -60,7 +69,6 @@ public class IR_using_linear_combination_fut_transfermarkt_parameterTuner {
 		System.out.println("Birthdate: " + bestB);
 		System.out.println("F1: " + score);
 	}
-
 
 	public static double parameterTuner(double name, double height, double bd) throws Exception {
 		// loading data
@@ -74,7 +82,9 @@ public class IR_using_linear_combination_fut_transfermarkt_parameterTuner {
 				"/stadiums/stadium/clubs/club/players/player", dataFut17);
 
 		// create a matching rule
+
 		LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.8);
+
 
 		// add comparators
 		matchingRule.addComparator(new PlayerNameComparatorJaccard(), name);
