@@ -38,9 +38,9 @@ public class IR_using_linear_combination_fifa_fut_parameterTuner {
 		double bestH = 0.0;
 		double bestB = 0.0;
 		int count = 0;
-		for (double j = 0.2; j < 0.5; j += 0.1) {
-				for (double k = 1; k < 1.1; k += 0.1) {
-					for (double l = 0.5; l < 1.5; l += 0.1) {
+		for (double j = 0.1; j < 2.0; j += 0.1) {
+				for (double k = 0.1; k < 2.0; k += 0.1) {
+					for (double l = 0.1; l < 2.0; l += 0.1) {
 						count++;
 						System.out.println("COUNT:   " + count);
 						System.out.println("Name: " + l);
@@ -76,7 +76,7 @@ public class IR_using_linear_combination_fifa_fut_parameterTuner {
 						"/stadiums/stadium/clubs/club/players/player", dataFut17);
 
 				// create a matching rule
-				LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.7);
+				LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.8);
 
 				// add comparators
 				matchingRule.addComparator(new PlayerNameComparatorJaccard(), name);
@@ -131,7 +131,7 @@ public class IR_using_linear_combination_fifa_fut_parameterTuner {
 										perfTest.getPrecision(), perfTest.getRecall(),
 										perfTest.getF1()));
 						
-						return perfTest.getF1()  ;
+						return perfTest.getF1();
 				
 
 	}
