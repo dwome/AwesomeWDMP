@@ -29,6 +29,27 @@ import model.PlayerXMLReader;
 public class IR_using_linear_combination_fifa_fut_parameterTuner {
 	public static void main(String[] args) throws Exception {
 		
+		
+		// loading data
+		HashedDataSet<Player, Attribute> dataFifa17 = new HashedDataSet<>();
+		new PlayerXMLReader().loadFromXML(new File("data/input/fifa17.xml"),
+				"/stadiums/stadium/clubs/club/players/player", dataFifa17);
+
+		HashedDataSet<Player, Attribute> dataFut17 = new HashedDataSet<>();
+		new PlayerXMLReader().loadFromXML(new File("data/input/fut17_WD.xml"),
+				"/stadiums/stadium/clubs/club/players/player", dataFut17);
+
+		// create a blocker (blocking strategy)
+		NoBlocker<Player, Attribute> blocker = new NoBlocker<Player, Attribute>();
+
+		StandardRecordBlocker<Player, Attribute> blocker2 = new StandardRecordBlocker<Player, Attribute>(
+				new PlayerBlockingFunctionBirthdate());
+		
+
+		// Initialize Matching Engine
+		MatchingEngine<Player, Attribute> engine = new MatchingEngine<>();
+
+		
 		double score = 0.0;
 		double bestN = 0.0;
 		double bestH = 0.0;
@@ -50,7 +71,22 @@ public class IR_using_linear_combination_fifa_fut_parameterTuner {
 						System.out.println("Birthdate: " + k);
 						System.out.println("---------------------------------------------" + score
 								+ "---------------------------------------------");
-						double tempscore = parameterTuner(l, j, k, w, r);
+						
+
+						// create a matching rule
+						LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.8);
+
+						// add comparators
+						matchingRule.addComparator(new PlayerNameComparatorJaccard(), l);
+						matchingRule.addComparator(new PlayerBirthdateComparatorJaccard(), k);
+						matchingRule.addComparator(new PlayerWeightComparator(), w);
+						matchingRule.addComparator(new PlayerHeightComparator(), j);
+						matchingRule.addComparator(new PlayerRatingComparator(), r);
+
+
+						
+						
+						double tempscore = parameterTuner(dataFifa17, dataFut17, blocker2, engine, matchingRule);
 						if (tempscore >= score) {
 							score = tempscore;
 							bestN = l;
@@ -72,36 +108,8 @@ public class IR_using_linear_combination_fifa_fut_parameterTuner {
 		System.out.println("F1: " + score);
 	}
 	
-	public static double parameterTuner(double name, double height, double bd, double weight, double rating) throws Exception {
-		// loading data
-				HashedDataSet<Player, Attribute> dataFifa17 = new HashedDataSet<>();
-				new PlayerXMLReader().loadFromXML(new File("data/input/fifa17.xml"),
-						"/stadiums/stadium/clubs/club/players/player", dataFifa17);
-
-				HashedDataSet<Player, Attribute> dataFut17 = new HashedDataSet<>();
-				new PlayerXMLReader().loadFromXML(new File("data/input/fut17_WD.xml"),
-						"/stadiums/stadium/clubs/club/players/player", dataFut17);
-
-				// create a matching rule
-				LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.8);
-
-				// add comparators
-				matchingRule.addComparator(new PlayerNameComparatorJaccard(), name);
-				matchingRule.addComparator(new PlayerBirthdateComparatorJaccard(), height);
-				matchingRule.addComparator(new PlayerWeightComparator(), weight);
-				matchingRule.addComparator(new PlayerHeightComparator(), bd);
-				matchingRule.addComparator(new PlayerRatingComparator(), rating);
-
-				// create a blocker (blocking strategy)
-				NoBlocker<Player, Attribute> blocker = new NoBlocker<Player, Attribute>();
-
-				StandardRecordBlocker<Player, Attribute> blocker2 = new StandardRecordBlocker<Player, Attribute>(
-						new PlayerBlockingFunctionBirthdate());
-				
-
-				// Initialize Matching Engine
-				MatchingEngine<Player, Attribute> engine = new MatchingEngine<>();
-
+	public static double parameterTuner(HashedDataSet<Player, Attribute> dataFifa17, HashedDataSet<Player, Attribute> dataFut17, StandardRecordBlocker<Player, Attribute> blocker2, MatchingEngine<Player, Attribute> engine, LinearCombinationMatchingRule<Player, Attribute> matchingRule) throws Exception {
+	
 				// Execute the matching
 				Processable<Correspondence<Player, Attribute>> correspondences = engine.runIdentityResolution(
 						dataFifa17, dataFut17, null, matchingRule,

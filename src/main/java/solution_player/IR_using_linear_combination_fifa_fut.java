@@ -42,11 +42,11 @@ public class IR_using_linear_combination_fifa_fut {
 		LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.8);
 
 		// add comparators
-		matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.7);
-		matchingRule.addComparator(new PlayerBirthdateComparatorJaccard(), 2.1);
-		matchingRule.addComparator(new PlayerHeightComparator(), 0.5);
-		matchingRule.addComparator(new PlayerWeightComparator(), 0.1);
-		matchingRule.addComparator(new PlayerRatingComparator(), 0.2);
+		matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.1);
+		matchingRule.addComparator(new PlayerBirthdateComparatorJaccard(), 0.999);
+		matchingRule.addComparator(new PlayerHeightComparator(), 0.4);
+		matchingRule.addComparator(new PlayerWeightComparator(), 0.4);
+		matchingRule.addComparator(new PlayerRatingComparator(), 0.3);
 
 		// create a blocker (blocking strategy)
 		NoBlocker<Player, Attribute> blocker = new NoBlocker<Player, Attribute>();

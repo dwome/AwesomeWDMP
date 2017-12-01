@@ -36,11 +36,11 @@ public class IR_using_linear_combination_fifa_transfermarkt {
 						"/stadiums/stadium/clubs/club/players/player", dataFifa17);
 
 				// create a matching rule
-				LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.6);
+				LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.5);
 
 				// add comparators
-				matchingRule.addComparator(new PlayerNameComparatorJaccard(), 1);
-				matchingRule.addComparator(new PlayerBirthdateComparatorJaccard(), 1);
+				matchingRule.addComparator(new PlayerNameComparatorJaccard(), 0.999);
+				matchingRule.addComparator(new PlayerBirthdateComparatorJaccard(), 0.999);
 				matchingRule.addComparator(new PlayerHeightComparator(), 0.4);
 
 				// create a blocker (blocking strategy)
@@ -57,7 +57,7 @@ public class IR_using_linear_combination_fifa_transfermarkt {
 						dataTrans, null, matchingRule, blocker2);
 
 				// write the correspondences to the output file
-				new CSVCorrespondenceFormatter().writeCSV(new File("data/output/FINAL_fifa17_2_trans_correspondences.csv"),
+				new CSVCorrespondenceFormatter().writeCSV(new File("data/output/fifa17_2_trans_correspondences.csv"),
 						correspondences);
 
 				// load the gold standard (test set)

@@ -25,6 +25,26 @@ import model.PlayerXMLReader;
 
 public class IR_using_linear_combination_fifa_transfermarkt_parameterTuning {
 	public static void main(String[] args) throws Exception {
+		
+		// load data 
+		HashedDataSet<Player, Attribute> dataTrans = new HashedDataSet<>();
+		new PlayerXMLReader().loadFromXML(new File("data/input/transfermarkt.xml"),
+				"/stadiums/stadium/clubs/club/players/player", dataTrans);
+
+		HashedDataSet<Player, Attribute> dataFifa17 = new HashedDataSet<>();
+		new PlayerXMLReader().loadFromXML(new File("data/input/fifa17.xml"),
+				"/stadiums/stadium/clubs/club/players/player", dataFifa17);
+
+		// create a blocker (blocking strategy)
+		NoBlocker<Player, Attribute> blocker = new NoBlocker<Player, Attribute>();
+
+		StandardRecordBlocker<Player, Attribute> blocker2 = new StandardRecordBlocker<Player, Attribute>(
+				new PlayerBlockingFunctionBirthdate());
+
+
+		// Initialize Matching Engine
+		MatchingEngine<Player, Attribute> engine = new MatchingEngine<>();
+
 
 		double score = 0.0;
 		double bestN = 0.0;
@@ -41,7 +61,20 @@ public class IR_using_linear_combination_fifa_transfermarkt_parameterTuning {
 					System.out.println("Birthdate: " + k);
 					System.out.println("---------------------------------------------" + score
 							+ "---------------------------------------------");
-					double tempscore = parameterTuner(l, j, k);
+
+
+					// create a matching rule
+					LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.5);
+
+					// add comparators
+					matchingRule.addComparator(new PlayerNameComparatorJaccard(), l);
+					// matchingRule.addComparator(new PlayerAgeComparatorFifa2Trans(), 0.2);
+					matchingRule.addComparator(new PlayerBirthdateComparatorJaccard(), k);
+					matchingRule.addComparator(new PlayerHeightComparator(), j);
+					// matchingRule.addComparator(new PlayerRatingComparator(), 0.2);
+
+
+					double tempscore = parameterTuner(dataFifa17, dataTrans, blocker2, engine, matchingRule);
 					if (tempscore >= score) {
 						score = tempscore;
 						bestN = l;
@@ -58,35 +91,7 @@ public class IR_using_linear_combination_fifa_transfermarkt_parameterTuning {
 		System.out.println("F1: " + score);
 	}
 
-	public static double parameterTuner(double name, double height, double bd) throws Exception {
-		// loading data
-
-		HashedDataSet<Player, Attribute> dataTrans = new HashedDataSet<>();
-		new PlayerXMLReader().loadFromXML(new File("data/input/transfermarkt.xml"),
-				"/stadiums/stadium/clubs/club/players/player", dataTrans);
-
-		HashedDataSet<Player, Attribute> dataFifa17 = new HashedDataSet<>();
-		new PlayerXMLReader().loadFromXML(new File("data/input/fifa17.xml"),
-				"/stadiums/stadium/clubs/club/players/player", dataFifa17);
-
-		// create a matching rule
-		LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.6);
-
-		// add comparators
-		matchingRule.addComparator(new PlayerNameComparatorJaccard(), name);
-		// matchingRule.addComparator(new PlayerAgeComparatorFifa2Trans(), 0.2);
-		matchingRule.addComparator(new PlayerBirthdateComparatorJaccard(), bd);
-		matchingRule.addComparator(new PlayerHeightComparator(), height);
-		// matchingRule.addComparator(new PlayerRatingComparator(), 0.2);
-
-		// create a blocker (blocking strategy)
-		NoBlocker<Player, Attribute> blocker = new NoBlocker<Player, Attribute>();
-
-		StandardRecordBlocker<Player, Attribute> blocker2 = new StandardRecordBlocker<Player, Attribute>(
-				new PlayerBlockingFunctionBirthdate());
-
-		// Initialize Matching Engine
-		MatchingEngine<Player, Attribute> engine = new MatchingEngine<>();
+	public static double parameterTuner(HashedDataSet<Player, Attribute> dataFifa17, HashedDataSet<Player, Attribute> dataTrans, StandardRecordBlocker<Player, Attribute> blocker2, MatchingEngine<Player, Attribute> engine, LinearCombinationMatchingRule<Player, Attribute> matchingRule) throws Exception {
 
 		// Execute the matching
 		Processable<Correspondence<Player, Attribute>> correspondences = engine.runIdentityResolution(dataFifa17,

@@ -12,6 +12,8 @@ import blocker.PlayerBlockingFunctionBirthdate;
 import comparators.PlayerBirthdateComparatorJaccard;
 import comparators.PlayerHeightComparator;
 import comparators.PlayerNameComparatorJaccard;
+import comparators.PlayerRatingComparator;
+import comparators.PlayerWeightComparator;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.NoBlocker;
@@ -29,6 +31,28 @@ import model.PlayerXMLReader;
 
 public class IR_using_linear_combination_fut_transfermarkt_parameterTuner {
 	public static void main(String[] args) throws Exception {
+		
+		
+		// loading data
+		HashedDataSet<Player, Attribute> dataTrans = new HashedDataSet<>();
+		new PlayerXMLReader().loadFromXML(new File("data/input/transfermarkt.xml"),
+				"/stadiums/stadium/clubs/club/players/player", dataTrans);
+
+		HashedDataSet<Player, Attribute> dataFut17 = new HashedDataSet<>();
+		new PlayerXMLReader().loadFromXML(new File("data/input/fut17_WD.xml"),
+				"/stadiums/stadium/clubs/club/players/player", dataFut17);
+
+		// create a blocker (blocking strategy)
+		NoBlocker<Player, Attribute> blocker = new NoBlocker<Player, Attribute>();
+
+		StandardRecordBlocker<Player, Attribute> blocker2 = new StandardRecordBlocker<Player, Attribute>(
+				new PlayerBlockingFunctionBirthdate());
+		
+
+		// Initialize Matching Engine
+		MatchingEngine<Player, Attribute> engine = new MatchingEngine<>();
+
+		
 		double score = 0.0;
 		double bestN = 0.0;
 		double bestH = 0.0;
@@ -44,7 +68,20 @@ public class IR_using_linear_combination_fut_transfermarkt_parameterTuner {
 					System.out.println("Birthdate: " + k);
 					System.out.println("---------------------------------------------" + score
 							+ "---------------------------------------------");
-					double tempscore = parameterTuner(l, j, k);
+					
+					
+					// create a matching rule
+					LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.5);
+
+					// add comparators
+					matchingRule.addComparator(new PlayerNameComparatorJaccard(), l);
+					matchingRule.addComparator(new PlayerHeightComparator(), j);
+					matchingRule.addComparator(new PlayerBirthdateComparatorJaccard(), k);
+
+
+					
+					
+					double tempscore = parameterTuner(dataTrans, dataFut17, blocker2, engine, matchingRule);
 					if (tempscore >= score) {
 						score = tempscore;
 						bestN = l;
@@ -61,32 +98,8 @@ public class IR_using_linear_combination_fut_transfermarkt_parameterTuner {
 		System.out.println("F1: " + score);
 	}
 
-	public static double parameterTuner(double name, double height, double bd) throws Exception {
-		// loading data
-
-		HashedDataSet<Player, Attribute> dataTrans = new HashedDataSet<>();
-		new PlayerXMLReader().loadFromXML(new File("data/input/transfermarkt.xml"),
-				"/stadiums/stadium/clubs/club/players/player", dataTrans);
-
-		HashedDataSet<Player, Attribute> dataFut17 = new HashedDataSet<>();
-		new PlayerXMLReader().loadFromXML(new File("data/input/fut17_WD.xml"),
-				"/stadiums/stadium/clubs/club/players/player", dataFut17);
-
-		// create a matching rule
-
-		LinearCombinationMatchingRule<Player, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.5);
-
-
-		// add comparators
-		matchingRule.addComparator(new PlayerNameComparatorJaccard(), name);
-		matchingRule.addComparator(new PlayerHeightComparator(), height);
-		matchingRule.addComparator(new PlayerBirthdateComparatorJaccard(), bd);
-
-		StandardRecordBlocker<Player, Attribute> blocker2 = new StandardRecordBlocker<Player, Attribute>(
-				new PlayerBlockingFunctionBirthdate());
-
-		// Initialize Matching Engine
-		MatchingEngine<Player, Attribute> engine = new MatchingEngine<>();
+	public static double parameterTuner(HashedDataSet<Player, Attribute> dataTrans, HashedDataSet<Player, Attribute> dataFut17, StandardRecordBlocker<Player, Attribute> blocker2, MatchingEngine<Player, Attribute> engine, LinearCombinationMatchingRule<Player, Attribute> matchingRule) throws Exception {
+			
 
 		// Execute the matching
 		Processable<Correspondence<Player, Attribute>> correspondences = engine.runIdentityResolution(dataFut17,
